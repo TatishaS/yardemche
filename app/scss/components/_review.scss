@@ -1,0 +1,125 @@
+.review {
+  box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.12);
+  border-radius: 0.8rem;
+  margin-bottom: 2.4rem;
+
+  &__header {
+    border-radius: 1.2rem 1.2rem 0 0;
+
+    padding: 2.4rem 2.4rem 0 2.4rem;
+
+    color: #fff;
+  }
+
+  &__header-wrapper {
+    border-bottom: 1px solid #c8c8c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header-inner {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    flex-basis: 6.9rem;
+    flex-shrink: 0;
+    height: 6.9rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 1.6rem;
+  }
+  &__right {
+    align-self: flex-end;
+    margin-right: 2.2rem;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.4rem;
+    color: $lighter-text;
+  }
+  &__name {
+    font-weight: 500;
+
+    color: $lighter-text;
+  }
+
+  &__rating-title {
+    display: block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    color: $grey-text;
+    margin-bottom: 1.2rem;
+
+    opacity: 0.6;
+  }
+
+  &__score {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $grey-text;
+    margin-right: 1.3rem;
+  }
+  &__info {
+    padding: 2.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .review {
+    &__title {
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .review {
+    &__title,
+    &__score {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .review {
+    &__header {
+      padding: 1.6rem;
+    }
+
+    &__img {
+      align-self: flex-start;
+    }
+
+    &__title {
+      margin-bottom: 0.8rem;
+    }
+    &__header-inner {
+      flex-direction: column;
+      align-items: initial;
+    }
+
+    &__left {
+      margin-bottom: 2rem;
+    }
+
+    &__right {
+      align-self: initial;
+    }
+  }
+}

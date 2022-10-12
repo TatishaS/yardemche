@@ -1,0 +1,98 @@
+.service {
+  padding-top: 4.4rem;
+  padding-bottom: 6.4rem;
+  &__header {
+    position: relative;
+    max-width: 116.8rem;
+    margin: 0 auto;
+    height: 36.4rem;
+    padding: 4.8rem;
+    border-radius: 2.4rem;
+    background-image: url(../../images/irina-buyevskaya.jpg);
+    overflow: hidden;
+
+    background-size: cover;
+    margin-bottom: 3.6rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 2;
+    }
+  }
+
+  &__header-inner {
+    position: relative;
+
+    z-index: 3;
+  }
+
+  &__person {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+
+    color: #ffffff;
+    margin-bottom: 2.4rem;
+  }
+  &__title {
+    max-width: 42.5rem;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+
+    color: #ffffff;
+    margin-bottom: 2.4rem;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 2.4rem;
+    color: #ffffff;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+
+    color: $grey-text;
+    margin-bottom: 1.6rem;
+  }
+
+  &__content {
+    color: $grey-text;
+  }
+
+  &__info {
+    color: inherit;
+  }
+}
+
+@media (max-width: 850px) {
+  .service {
+    &__header {
+      background-position: center center;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .service {
+    padding-top: 2.4rem;
+
+    &__header {
+      padding: 3.6rem;
+    }
+
+    &__title {
+      font-size: 3rem;
+      line-height: 3rem;
+    }
+  }
+}

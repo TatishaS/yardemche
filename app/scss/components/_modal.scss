@@ -1,0 +1,45 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  max-width: 117.1rem;
+  width: 100%;
+
+  min-height: 75.2rem;
+  z-index: 150;
+  border-radius: 2.4rem;
+  &.active {
+    display: block;
+  }
+
+  &__wrapper {
+    width: 100%;
+  }
+
+  &__close {
+    position: absolute;
+    content: '';
+    background: center no-repeat url(../../images/icon-cancel.svg);
+
+    cursor: pointer;
+
+    width: 2rem;
+    height: 2rem;
+
+    top: 3rem;
+    right: 3rem;
+  }
+  &__form {
+    width: 100%;
+    background: #fff;
+  }
+}
+
+@media (max-width: 1024px) {
+  .modal {
+    width: 90%;
+  }
+}

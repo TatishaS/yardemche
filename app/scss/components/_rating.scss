@@ -1,0 +1,64 @@
+.rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__stars {
+    display: inline-flex;
+    max-width: 13.6rem;
+    height: 2.4rem;
+  }
+
+  /* make hover effect work properly in IE */
+  &__star {
+    pointer-events: none;
+  }
+
+  /* hide radio inputs */
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    padding: 0 0.2rem 0 0.2rem;
+
+    &--none {
+      display: none;
+      padding: 0;
+    }
+  }
+
+  /* set default star color */
+  &__star {
+    fill: $accent-orange;
+
+    path {
+      fill: $accent-orange;
+    }
+  }
+
+  /* if any input is checked, make its following siblings grey  */
+  &__input:checked ~ .rating__label .rating__star {
+    fill: #cccccc;
+    path {
+      fill: #cccccc;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .rating {
+    &__star {
+      width: 16px;
+      height: 16px;
+    }
+    &__stars {
+      max-width: 9.6rem;
+      height: 1.6rem;
+    }
+
+    &__label {
+      padding: 0 0.2rem 0 0.2rem;
+    }
+  }
+}

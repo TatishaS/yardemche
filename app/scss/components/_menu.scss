@@ -1,0 +1,100 @@
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-right: 6.4rem;
+  margin-left: auto;
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item:not(:last-child) {
+    margin-right: 3.6rem;
+  }
+  &__item-img {
+    margin-right: 1.2rem;
+
+    fill: $darkgrey-text;
+
+    path {
+      fill: $darkgrey-text;
+    }
+  }
+
+  &__burger {
+    display: block;
+    position: relative;
+    height: 2.2rem;
+    width: 2.8rem;
+    margin-top: 0.2rem;
+
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 0.4rem;
+      width: 2.8rem;
+      background: $darkgrey-text;
+    }
+
+    &::before {
+      top: 0;
+      right: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+    }
+
+    span {
+      position: absolute;
+      top: 0.9rem;
+      right: 0;
+      width: 2.8rem;
+      background: $darkgrey-text;
+      height: 0.4rem;
+    }
+  }
+
+  &__burger--white {
+    &::before,
+    &::after {
+      background: #fff;
+    }
+
+    span {
+      background: #fff;
+    }
+  }
+
+  &--transparent .menu__list-link {
+    color: $grey-header;
+  }
+
+  &--transparent .menu__item-img {
+    fill: #fff;
+
+    path {
+      fill: #fff;
+    }
+  }
+}
+
+@media (max-width: 740px) {
+  .menu {
+    margin-right: 0;
+    &__item--registration,
+    &__item--phone {
+      display: none;
+    }
+  }
+}

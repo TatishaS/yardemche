@@ -1,0 +1,40 @@
+.portfolio {
+  margin-bottom: 3.9rem;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 2.4rem;
+  }
+
+  &__btn {
+    width: auto;
+    padding: 1.1rem 2.6rem;
+    background-color: $darkest-text;
+    color: #fff;
+  }
+
+  &__slider-container {
+    position: relative;
+  }
+
+  &__slider-item {
+    min-height: 20.8rem;
+  }
+
+  & .swiper-slider {
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  &__item-wrapper {
+    border-radius: 1.2rem;
+    overflow: hidden;
+  }
+
+  &__slider-img {
+    width: 100%;
+
+    object-fit: cover;
+  }
+}

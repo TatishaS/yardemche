@@ -1,0 +1,46 @@
+.rating-black {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &__stars {
+    display: inline-flex;
+    max-width: 10.6rem;
+    height: 1.8rem;
+  }
+
+  /* make hover effect work properly in IE */
+  &__star {
+    pointer-events: none;
+  }
+
+  /* hide radio inputs */
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    padding: 0 0.2rem 0 0.2rem;
+
+    &--zero {
+      display: none;
+      padding: 0;
+    }
+  }
+
+  /* set default star color */
+  &__star {
+    fill: #fff;
+  }
+  &__star .rating-black__star-path {
+    stroke: #fff;
+    stroke-width: 0.1rem;
+  }
+
+  /* if any input is checked, make its following siblings grey  */
+  &__input:checked ~ .rating-black__label .rating-black__star {
+    fill: #222;
+    stroke: #fff;
+    stroke-width: 0.1rem;
+  }
+}

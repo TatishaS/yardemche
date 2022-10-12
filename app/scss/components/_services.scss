@@ -1,0 +1,100 @@
+.services {
+  margin-bottom: 5.6rem;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 1.9rem;
+  }
+
+  &__btn {
+    width: auto;
+    color: #fff;
+    background-color: $darkest-text;
+    border: none;
+    padding: 1.1rem 3.6rem;
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+  &__item {
+    position: relative;
+    color: #fff;
+
+    padding: 3.6rem;
+    border-radius: 1.2rem;
+    background-image: url(../../images/services-1.jpg);
+    overflow: hidden;
+
+    background-size: cover;
+  }
+
+  &__item-inner {
+    position: relative;
+
+    z-index: 3;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.4rem;
+  }
+
+  &__item-params {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 2.8rem;
+  }
+
+  &__item-divider {
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+
+    background: #989898;
+  }
+
+  &__param {
+    font-weight: 700;
+  }
+  &__param:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+  &__param:not(:first-child) {
+    margin-left: 1.6rem;
+  }
+
+  &__info-title {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .services {
+    &__list {
+      grid-gap: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .services {
+    &__list {
+      grid-template-columns: 1fr;
+      grid-gap: 1.2rem;
+    }
+
+    &__item-title {
+      line-height: 2.4rem;
+    }
+  }
+}

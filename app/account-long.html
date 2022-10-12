@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script defer src="js/main.min.js"></script>
+    <title>Ярдэмче</title>
+  </head>
+
+  <body class="main__body">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <a class="header__logo" href="#">
+              <img src="images/logo-header.svg" alt="Ярдэмче лого" />
+            </a>
+
+            <ul class="header__menu menu">
+              <li class="menu__item">
+                <svg
+                  class="menu__item-img menu__item-img--login"
+                  width="20"
+                  height="20"
+                >
+                  <use xlink:href="#icon-login"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Войти</a>
+              </li>
+              <li class="menu__item menu__item--registration">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-register"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Регистрация</a>
+              </li>
+              <li class="menu__item menu__item--phone">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-call"></use>
+                </svg>
+                <a href="tel:+79172957725" class="menu__list-link"
+                  >+7 917 295-77-25</a
+                >
+              </li>
+            </ul>
+            <button class="menu__burger">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main--account-long">
+
+      <section class="client client--long">
+        <div class="container">
+          <div class="client__profile">
+            <div class="client__profile-inner">
+              <div class="client__img-wrapper">
+                <img
+                  src="./images/client-photo.jpg"
+                  alt="Фото клиента"
+                  class="client__img client__img--desktop"
+                />
+              </div>
+
+              <div class="client__info client__info--long">
+                <div class="client__info-wrapper">
+                  <img
+                  src="./images/client-photo.jpg"
+                  alt="Фото клиента"
+                  class="client__img client__img--mobile"
+                />
+                  <div class="client__info-text">
+                    <div class="client__tags">
+                      <a href="#" class="client__tag">Психология</a>
+                      <a href="#" class="client__tag">Юриспруденция</a>
+                    </div>
+                    <h1 class="client__name ">Ирина Буевская</h1>
+                    <p class="client__status">Специалист «ярдэмче»</p>
+                  </div>
+                </div>
+
+
+                <div class="client__bottom">
+                  <div class="client__stat">
+                    <div class="client__rating">
+                      <span class="client__stat-parameter">Рейтинг</span>
+                      <div class="client__rating-block rating">
+                        <span class="client__score">8.6</span>
+                        <div class="client__rating-stars rating__stars">
+                          <input
+                            disabled
+                            checked
+                            class="rating__input rating__input--none visually-hidden"
+                            id="star0-top"
+                            value="0"
+                            type="radio"
+                            name="rating"
+                          />
+  
+                          <label
+                            for="star1-top"
+                            class="rating__label"
+                            aria-label="1 звезда"
+                          >
+                            <svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                          </label>
+                          <input
+                            type="radio"
+                            id="star1-top"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="1"
+                          />
+  
+                          <label
+                            for="star2-top"
+                            class="rating__label"
+                            aria-label="2 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star2-top"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="2"
+                          />
+  
+                          <label
+                            for="star3-top"
+                            class="rating__label"
+                            aria-label="3 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star3-top"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="3"
+                            checked
+                          />
+  
+                          <label
+                            for="star4-top"
+                            class="rating__label"
+                            aria-label="4 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star4-top"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="4"
+                          />
+  
+                          <label
+                            for="star5-top"
+                            class="rating__label"
+                            aria-label="5 звезд"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star5-top"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="5"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="client__location">
+                      <span class="client__stat-parameter">Город</span>
+                      <span class="client__city">Краснодар</span>
+                    </div>
+                    <div class="client__period">
+                      <span class="client__stat-parameter">На сайте уже</span>
+                      <span class="client__duration">2 месяца</span>
+                    </div>
+                  </div>
+                  <div class="client__info-btns">
+                    <a
+                      href="#"
+                      class="client__info-btn client__info-btn--page btn"
+                      >Ваша страница</a
+                    >
+                    <a
+                      href="#"
+                      class="client__info-btn client__info-btn--requests btn"
+                      >Ваши заявки</a
+                    >
+                    <a href="#" class="client__info-btn client__info-btn--profile btn"
+                      >Профиль</a
+                    >
+                  </div>
+                </div>
+              
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   
+      <section class="portfolio">
+        <div class="container">
+          <div class="portfolio__top">
+            <h2 class="portfolio__title section-title">Портфолио</h2>
+            <a class="portfolio__btn btn">Добавить фото</a>
+          </div>
+       
+        
+         
+        <div class="portfolio__slider-container">
+          <div class="portfolio__swiper-slider swiper-slider">
+            <div class="swiper-wrapper">
+              <div class="portfolio__slider-item swiper-slide">
+                <div class="portfolio__item-wrapper">
+                  <img
+                    src="./images/slider-1.jpg"
+                    alt="Фото портфолио"
+                    class="portfolio__slider-img"
+                  />
+                </div>
+              </div>
+              <div class="portfolio__slider-item swiper-slide">
+                <div class="portfolio__item-wrapper">
+                  <img
+                    src="./images/slider-2.jpg"
+                    alt="Фото портфолио"
+                    class="portfolio__slider-img"
+                  />
+                </div>
+              </div>
+              <div class="portfolio__slider-item swiper-slide">
+                <div class="portfolio__item-wrapper">
+                  <img
+                    src="./images/slider-3.jpg"
+                    alt="Фото портфолио"
+                    class="portfolio__slider-img"
+                  />
+                </div>
+              </div>
+              <div class="portfolio__slider-item swiper-slide">
+                <div class="portfolio__item-wrapper">
+                  <img
+                    src="./images/slider-2.jpg"
+                    alt="Фото портфолио"
+                    class="portfolio__slider-img"
+                  />
+                </div>
+              </div>
+              <div class="portfolio__slider-item swiper-slide">
+                <div class="portfolio__item-wrapper">
+                  <img
+                    src="./images/slider-3.jpg"
+                    alt="Фото портфолио"
+                    class="portfolio__slider-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__slider-btns">
+            <button class="portfolio__slider-arrow swiper-button-prev">
+              <img src="./images/icon-arrow-left.svg" alt="" />
+            </button>
+            <button class="portfolio__slider-arrow swiper-button-next">
+              <img src="./images/icon-arrow-right.svg" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+          
+        
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <div class="about__top">
+            <h2 class="about__title section-title">Специалист про себя</h2>
+            <button class="about__btn btn">Редактировать</button>
+          </div>
+          <div class="about__info-wrapper">
+            <div class="about__info">
+              <h6 class="about__info-title">Маникюр педикюр</h6>
+              <p class="about__info-text">
+                Мастер-универсал. Мой девиз: "Делай хорошо, клиенты оценят
+                качество ." Опыт работы от 04.2015 года. Работаю на дому Софьи
+                Ковалевской ,Возможен выезд к Вам на дом . Стерильность ,крафт
+                пакеты, аккуратность в работе . Работаю поли гелем ,у/ф акрилом
+                и IBX, Shellac, Укрепление,педикюр аппаратный ,обрезной ,вросший
+                ноготь, стержневая мозоль . Маникюр: аппаратный
+                ,обрезной,классический, дизайны ,втирки,паталь
+                ,фольга,шимер,комифубики ,блёстки, люрикс аэрография
+                ,наращивание на формы ,наращивание на проблемные ногти.
+              </p>
+              <p class="about__info-text">
+                Предлагаю СПА- услуги: парафин (горячий и холодный) , скраб ,
+                маска, массаж рук и ног. Депиляция (воск или сахар).
+              </p>
+              <p class="about__info-text">
+                Кератин, Ботокс, выпрямление волос.
+              </p>
+              <p class="about__info-text">
+                Ламинирование, наращивание ресниц, окраска бровей.
+              </p>
+            </div>
+            <div class="about__info">
+              <h6 class="about__info-title">Фотограф.</h6>
+              <p class="about__info-text">
+                Фотографирую с 2003 года .Фотографировал свадьбы (около 20 раз),
+                дни рождения , фотосеты . Делал фотоотчеты Нового года в
+                ресторане Океан. Работал фотографом выходного дня в кафе
+                Амстердам . Имею в оснащении импульсный свет,2 вспышки и
+                пилотный (статичный), а также провод для креативной съемки .
+                Фотографирую на Nikon D600 со светосильной оптикой .Портретный
+                50мм .,широкоугольный 14-24 мм,телевик 70-200мм. Кроме оптики
+                есть фильтры , поляризационный и звездный . Есть возможность
+                недорогой печати на фабрике печати EPSON . А также опыт работы
+                программ по редактированию фотографий (ретушь) и др .
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services">
+        <div class="container">
+          <div class="services__top">
+            <h2 class="services__title section-title">Ваши услуги</h2>
+            <button class="services__btn btn">Добавить услугу</button>
+          </div>
+          <ul class="services__list">
+            <li
+              class="services__item"
+              style="background-image: url('./images/services-1.jpg')"
+            >
+              <div class="services__item-inner">
+                <div class="services__item-data">
+                  <h3 class="services__item-title">
+                    Психологическая помощь 2 сеанса
+                  </h3>
+                  <div class="services__item-params">
+                    <span class="services__param services__param--type"
+                      >Психология</span
+                    >
+                    <span class="services__item-divider"></span>
+                    <span class="services__param services__param--price"
+                      >5 000 рублей</span
+                    >
+                  </div>
+
+                  <h6 class="services__info-title">Описание</h6>
+                  <p class="services__info-text">
+                    Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
+                    с Вами!
+                  </p>
+                  <p class="services__info-text">
+                    10 лет работы в государственной службе, 10 лет практической
+                    работы с детьми, взрослыми и семьями. Индивидуальная и
+                    групповая работа, тренинги и семинары. Счастливые глаза
+                    детей и положительные отзывы взрослых. Всё это позволяет мне
+                    сказать: «Мы вместе решим возникшие вопросы, избавимся от
+                    проблем и будем идти вперёд с уверенностью и блеском в
+                    глазах».
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li
+              class="services__item"
+              style="background-image: url('./images/services-2.jpg')"
+            >
+              <div class="services__item-inner">
+                <div class="services__item-data">
+                  <h3 class="services__item-title">
+                    Психологическая помощь 1 сеанс
+                  </h3>
+                  <div class="services__item-params">
+                    <span class="services__param services__param--type"
+                      >Психология</span
+                    >
+                    <span class="services__item-divider"></span>
+                    <span class="services__param services__param--price"
+                      >3 000 рублей</span
+                    >
+                  </div>
+                  <h6 class="services__info-title">Описание</h6>
+                  <p class="services__info-text">
+                    Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
+                    с Вами!
+                  </p>
+                  <p class="services__info-text">
+                    10 лет работы в государственной службе, 10 лет практической
+                    работы с детьми, взрослыми и семьями. Индивидуальная и
+                    групповая работа, тренинги и семинары. Счастливые глаза
+                    детей и положительные отзывы взрослых. Всё это позволяет мне
+                    сказать: «Мы вместе решим возникшие вопросы, избавимся от
+                    проблем и будем идти вперёд с уверенностью и блеском в
+                    глазах».
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+        
+      <section class="reviews">
+        <div class="container">
+          
+            <h2 class="reviews__title section-title">Отзывы</h2>
+            <ul class="reviews__list">
+              <li class="reviews__item review">
+                <div class="review__header">
+                  <div class="review__header-wrapper">
+                    <img
+                    src="./images/expert-1.jpg"
+                    alt="Фото специалиста"
+                    class="review__img"
+                  />
+                  <div class="review__header-inner">
+                    <div class="review__left">
+                      <h3 class="review__title">Лучший специалист</h3>
+                      <p class="review__name">Анастасия Вербицкая</p>
+                    </div>
+                    <div class="review__right">
+
+                      <span class="review__rating-title">Оценка</span>
+                      <div class="review__rating-block rating">
+                        <span class="review__score">8.6</span>
+                        <div class="review__rating-stars rating__stars">
+                          
+                          <input
+                            disabled
+                            checked
+                            class="rating__input rating__input--none visually-hidden"
+                            id="star0"
+                            value="0"
+                            type="radio"
+                            name="rating"
+                          />
+        
+                          <label
+                            for="star1"
+                            class="rating__label"
+                            aria-label="1 звезда"
+                          >
+                            <svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use>
+                            </svg>
+                          </label>
+                          <input
+                            type="radio"
+                            id="star1"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="1"
+                           
+                          />
+        
+                          <label
+                            for="star2"
+                            class="rating__label"
+                            aria-label="2 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star2"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="2"
+                          />
+        
+                          <label
+                            for="star3"
+                            class="rating__label"
+                            aria-label="3 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star3"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="3"  checked
+                          />
+        
+                          <label
+                            for="star4"
+                            class="rating__label"
+                            aria-label="4 звезды"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star4"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="4"
+                          />
+        
+                          <label
+                            for="star5"
+                            class="rating__label"
+                            aria-label="5 звезд"
+                            ><svg class="rating__star" width="24" height="24">
+                              <use xlink:href="#star"></use></svg
+                          ></label>
+                          <input
+                            type="radio"
+                            id="star5"
+                            class="rating__input visually-hidden"
+                            name="rating"
+                            value="5"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+                </div>
+                <div class="review__info">
+                  <p class="review__info-text">Психолог, Детский психолог, Арт-терапевт. Жду встречи именно с Вами! </p>
+                  <p class="review__info-text">
+                    10 лет работы в государственной службе, 10 лет практической работы с детьми, взрослыми и семьями. Индивидуальная и групповая работа, тренинги и семинары. Счастливые глаза детей и положительные отзывы взрослых. Всё это позволяет мне сказать: «Мы вместе решим возникшие вопросы, избавимся от проблем и будем идти вперёд с уверенностью и блеском в глазах».
+                  </p>
+          
+                </div>
+              </li>
+            </ul>
+          </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <a href="#" class="footer__logo-link">
+              <img
+                src="./images/logo-footer.svg"
+                alt="Лого Ярдэм"
+                class="footer__logo-img"
+              />
+            </a>
+            <p class="footer__copyright">ООО «ЯРДЭМЧЕ» Все права защищены</p>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </div>
+          <a href="tel:+79172957725" class="footer__contact"
+            >+7 917 295-77-25</a
+          >
+        </div>
+      </div>
+    </footer>
+    <svg
+      class="visually-hidden"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol
+        id="icon-login"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.4117 6.07571C14.4117 8.52324 12.4493 10.4858 10 10.4858C7.55162 10.4858 5.58839 8.52324 5.58839 6.07571C5.58839 3.62819 7.55162 1.6665 10 1.6665C12.4493 1.6665 14.4117 3.62819 14.4117 6.07571ZM10 18.3332C6.38535 18.3332 3.33337 17.7457 3.33337 15.479C3.33337 13.2115 6.40453 12.6448 10 12.6448C13.6156 12.6448 16.6667 13.2323 16.6667 15.499C16.6667 17.7665 13.5956 18.3332 10 18.3332Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-register"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.91663 10.4616C10.2121 10.4616 12.0522 8.59771 12.0522 6.27253C12.0522 3.94735 10.2121 2.0835 7.91663 2.0835C5.62115 2.0835 3.7811 3.94735 3.7811 6.27253C3.7811 8.59771 5.62115 10.4616 7.91663 10.4616ZM7.91663 12.5128C4.54515 12.5128 1.66663 13.0519 1.66663 15.2055C1.66663 17.3583 4.52763 17.9168 7.91663 17.9168C11.2873 17.9168 14.1666 17.3778 14.1666 15.2241C14.1666 13.0705 11.3056 12.5128 7.91663 12.5128ZM16.5816 7.99005H17.5841C17.9968 7.99005 18.3333 8.33125 18.3333 8.74973C18.3333 9.1682 17.9968 9.50941 17.5841 9.50941H16.5816V10.4905C16.5816 10.909 16.246 11.2502 15.8324 11.2502C15.4198 11.2502 15.0833 10.909 15.0833 10.4905V9.50941H14.0824C13.6689 9.50941 13.3333 9.1682 13.3333 8.74973C13.3333 8.33125 13.6689 7.99005 14.0824 7.99005H15.0833V7.00984C15.0833 6.59137 15.4198 6.25016 15.8324 6.25016C16.246 6.25016 16.5816 6.59137 16.5816 7.00984V7.99005Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-call"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.1389 11.983C14.5791 11.8626 14.1363 12.1225 13.7442 12.3494C13.3427 12.5833 12.5791 13.2027 12.1415 13.0442C9.90074 12.1216 7.79328 10.1604 6.88099 7.91064C6.7202 7.46364 7.33671 6.69525 7.56886 6.28897C7.79414 5.89568 8.04865 5.44868 7.93257 4.88474C7.82767 4.37797 6.47085 2.65148 5.99106 2.17936C5.67464 1.8675 5.35049 1.69598 5.01773 1.66826C3.76667 1.61455 2.36943 3.28386 2.12438 3.68322C1.51046 4.53476 1.5139 5.66785 2.1347 7.04176C3.63081 10.7321 9.28939 16.3014 12.9936 17.8537C13.6771 18.1734 14.3022 18.3337 14.8637 18.3337C15.4131 18.3337 15.9024 18.1803 16.3229 17.8763C16.6401 17.6935 18.3779 16.2269 18.3323 14.9422C18.3048 14.6147 18.1337 14.2873 17.8258 13.9702C17.3572 13.486 15.6419 12.0887 15.1389 11.983Z"
+        />
+      </symbol>
+      <symbol id="star" viewBox="0 0 20 19" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M9.04894 0.927052C9.3483 0.00574112 10.6517 0.00573993 10.9511 0.927051L12.4697 5.60081C12.6035 6.01284 12.9875 6.2918 13.4207 6.2918H18.335C19.3037 6.2918 19.7065 7.53141 18.9228 8.10081L14.947 10.9894C14.5966 11.244 14.4499 11.6954 14.5838 12.1074L16.1024 16.7812C16.4017 17.7025 15.3472 18.4686 14.5635 17.8992L10.5878 15.0106C10.2373 14.756 9.7627 14.756 9.41221 15.0106L5.43648 17.8992C4.65276 18.4686 3.59828 17.7025 3.89763 16.7812L5.41623 12.1074C5.55011 11.6954 5.40345 11.244 5.05296 10.9894L1.07722 8.10081C0.293507 7.53141 0.696283 6.2918 1.66501 6.2918H6.57929C7.01252 6.2918 7.39647 6.01284 7.53035 5.60081L9.04894 0.927052Z"
+        />
+      </symbol>
+    </svg>
+
+  </body>
+</html>

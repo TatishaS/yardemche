@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script defer src="js/main.min.js"></script>
+    <title>Ярдэмче</title>
+  </head>
+
+  <body class="main__body main__body--fullscreen">
+    <header class="header header--fullscreen">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <a class="header__logo" href="#">
+              <img src="images/logo-header.svg" alt="Ярдэмче лого" />
+            </a>
+
+            <ul class="header__menu menu menu--transparent">
+              <li class="menu__item">
+                <svg
+                  class="menu__item-img menu__item-img--login"
+                  width="20"
+                  height="20"
+                >
+                  <use xlink:href="#icon-login"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Войти</a>
+              </li>
+              <li class="menu__item menu__item--registration">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-register"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Регистрация</a>
+              </li>
+              <li class="menu__item menu__item--phone">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-call"></use>
+                </svg>
+                <a href="tel:+79172957725" class="menu__list-link"
+                  >+7 917 295-77-25</a
+                >
+              </li>
+            </ul>
+            <button class="menu__burger menu__burger--white">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main main--login">
+      <div class="signup signup--login">
+        <div class="signup__inner">
+          <h1 class="signup__title signup__title--login">Войти в аккаунт</h1>
+
+          <form class="login__form form">
+            <label class="form__label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              class="form__input"
+              autocomplete="off"
+              required
+            />
+            <label class="form__label" for="password"> Пароль</label>
+            <input
+              class="form__input form__input--password"
+              type="password"
+              name="password"
+              required
+            />
+
+            <button type="submit" class="form__btn btn">Войти в аккаунт</button>
+          </form>
+          <div class="signup__bottom">
+            <a href="#" class="signup__question">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer footer--fullscreen">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <a href="#" class="footer__logo-link">
+              <img
+                src="./images/logo-footer.svg"
+                alt="Лого Ярдэм"
+                class="footer__logo-img"
+              />
+            </a>
+            <p class="footer__copyright">ООО «ЯРДЭМЧЕ» Все права защищены</p>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </div>
+          <a href="tel:+79172957725" class="footer__contact"
+            >+7 917 295-77-25</a
+          >
+        </div>
+      </div>
+    </footer>
+    <svg
+      class="visually-hidden"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol
+        id="icon-login"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.4117 6.07571C14.4117 8.52324 12.4493 10.4858 10 10.4858C7.55162 10.4858 5.58839 8.52324 5.58839 6.07571C5.58839 3.62819 7.55162 1.6665 10 1.6665C12.4493 1.6665 14.4117 3.62819 14.4117 6.07571ZM10 18.3332C6.38535 18.3332 3.33337 17.7457 3.33337 15.479C3.33337 13.2115 6.40453 12.6448 10 12.6448C13.6156 12.6448 16.6667 13.2323 16.6667 15.499C16.6667 17.7665 13.5956 18.3332 10 18.3332Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-register"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.91663 10.4616C10.2121 10.4616 12.0522 8.59771 12.0522 6.27253C12.0522 3.94735 10.2121 2.0835 7.91663 2.0835C5.62115 2.0835 3.7811 3.94735 3.7811 6.27253C3.7811 8.59771 5.62115 10.4616 7.91663 10.4616ZM7.91663 12.5128C4.54515 12.5128 1.66663 13.0519 1.66663 15.2055C1.66663 17.3583 4.52763 17.9168 7.91663 17.9168C11.2873 17.9168 14.1666 17.3778 14.1666 15.2241C14.1666 13.0705 11.3056 12.5128 7.91663 12.5128ZM16.5816 7.99005H17.5841C17.9968 7.99005 18.3333 8.33125 18.3333 8.74973C18.3333 9.1682 17.9968 9.50941 17.5841 9.50941H16.5816V10.4905C16.5816 10.909 16.246 11.2502 15.8324 11.2502C15.4198 11.2502 15.0833 10.909 15.0833 10.4905V9.50941H14.0824C13.6689 9.50941 13.3333 9.1682 13.3333 8.74973C13.3333 8.33125 13.6689 7.99005 14.0824 7.99005H15.0833V7.00984C15.0833 6.59137 15.4198 6.25016 15.8324 6.25016C16.246 6.25016 16.5816 6.59137 16.5816 7.00984V7.99005Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-call"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.1389 11.983C14.5791 11.8626 14.1363 12.1225 13.7442 12.3494C13.3427 12.5833 12.5791 13.2027 12.1415 13.0442C9.90074 12.1216 7.79328 10.1604 6.88099 7.91064C6.7202 7.46364 7.33671 6.69525 7.56886 6.28897C7.79414 5.89568 8.04865 5.44868 7.93257 4.88474C7.82767 4.37797 6.47085 2.65148 5.99106 2.17936C5.67464 1.8675 5.35049 1.69598 5.01773 1.66826C3.76667 1.61455 2.36943 3.28386 2.12438 3.68322C1.51046 4.53476 1.5139 5.66785 2.1347 7.04176C3.63081 10.7321 9.28939 16.3014 12.9936 17.8537C13.6771 18.1734 14.3022 18.3337 14.8637 18.3337C15.4131 18.3337 15.9024 18.1803 16.3229 17.8763C16.6401 17.6935 18.3779 16.2269 18.3323 14.9422C18.3048 14.6147 18.1337 14.2873 17.8258 13.9702C17.3572 13.486 15.6419 12.0887 15.1389 11.983Z"
+        />
+      </symbol>
+    </svg>
+  </body>
+</html>

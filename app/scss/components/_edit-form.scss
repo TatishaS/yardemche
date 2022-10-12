@@ -1,0 +1,172 @@
+.edit-form {
+  &__header {
+    background: $darkgrey-text;
+    border-radius: 2.4rem 2.4rem 0 0;
+    padding: 2.4rem 3.6rem;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-input {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: inherit;
+  }
+  &__title-input::placeholder {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #fff;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2.4rem;
+  }
+  &__file-label,
+  &__price-label,
+  &__price-input,
+  &__save {
+    color: inherit;
+    cursor: pointer;
+  }
+
+  &__price-input {
+    max-width: 6rem;
+    flex-basis: 6rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+  &__price-input::placeholder {
+    cursor: pointer;
+    color: inherit;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  &__save,
+  &__close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.1rem 0;
+  }
+
+  &__icon {
+    margin-right: 1rem;
+  }
+
+  &__file-input {
+    display: none;
+  }
+
+  &__file-preview {
+    position: relative;
+
+    width: 4.8rem;
+    height: 4.8rem;
+    background-image: url(../../images/client-photo.jpg);
+    background-size: cover;
+    border: 0.1rem solid #fff;
+    border-radius: 1.2rem;
+    overflow: hidden;
+    margin-right: 1.6rem;
+  }
+  &__file-preview::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+  }
+
+  &__img-icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+    z-index: 10;
+  }
+
+  &__content {
+    border-radius: 0 0 2.4rem 2.4rem;
+    padding: 2.4rem 3.6rem 3.6rem;
+  }
+
+  &__textarea-label {
+    font-weight: 700;
+
+    color: $grey-text;
+    margin-bottom: 1.2rem;
+  }
+
+  &__textarea {
+    width: 100%;
+    color: $light-text;
+    background-color: #fff;
+    border: none;
+    resize: none;
+    outline: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .edit-form {
+    &__header {
+      padding: 2.4rem 2.4rem;
+
+      display: flex;
+      flex-direction: column;
+      align-items: initial;
+    }
+    &__title-input {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .edit-form {
+    &__btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+
+    &__btn {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
