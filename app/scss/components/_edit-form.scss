@@ -54,6 +54,7 @@
     line-height: 2.4rem;
     border: none;
     outline: none;
+    color: #fff;
     background: transparent;
   }
 
@@ -139,6 +140,10 @@
     border: none;
     resize: none;
     outline: none;
+  }
+
+  &__textarea::placeholder {
+    opacity: 0.6;
   }
 }
 

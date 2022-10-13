@@ -38,6 +38,15 @@ body {
   }
 } */
 
+.disable-scroll {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
 .main {
   flex: 1 0 auto;
 

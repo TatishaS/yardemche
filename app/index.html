@@ -16,36 +16,49 @@
             <a class="header__logo" href="#">
               <img src="images/logo-header.svg" alt="Ярдэмче лого" />
             </a>
+            <div class="header__nav-wrapper">
+              <ul class="header__menu menu user-nav">
+                <li class="menu__item">
+                  <svg
+                    class="menu__item-img menu__item-img--login"
+                    width="20"
+                    height="20"
+                  >
+                    <use xlink:href="#icon-login"></use>
+                  </svg>
+                  <a href="#" class="menu__list-link">Войти</a>
+                </li>
+                <li class="menu__item menu__item--registration">
+                  <svg class="menu__item-img" width="20" height="20">
+                    <use xlink:href="#icon-register"></use>
+                  </svg>
+                  <a href="#" class="menu__list-link">Регистрация</a>
+                </li>
+                <li class="menu__item menu__item--phone">
+                  <svg class="menu__item-img" width="20" height="20">
+                    <use xlink:href="#icon-call"></use>
+                  </svg>
+                  <a href="tel:+79172957725" class="menu__list-link"
+                    >+7 917 295-77-25</a
+                  >
+                </li>
+              </ul>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">Специалисты</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">О нас</a>
+                </li>
+              </ul>
 
-            <ul class="header__menu menu">
-              <li class="menu__item">
-                <svg
-                  class="menu__item-img menu__item-img--login"
-                  width="20"
-                  height="20"
-                >
-                  <use xlink:href="#icon-login"></use>
-                </svg>
-                <a href="#" class="menu__list-link">Войти</a>
-              </li>
-              <li class="menu__item menu__item--registration">
-                <svg class="menu__item-img" width="20" height="20">
-                  <use xlink:href="#icon-register"></use>
-                </svg>
-                <a href="#" class="menu__list-link">Регистрация</a>
-              </li>
-              <li class="menu__item menu__item--phone">
-                <svg class="menu__item-img" width="20" height="20">
-                  <use xlink:href="#icon-call"></use>
-                </svg>
-                <a href="tel:+79172957725" class="menu__list-link"
-                  >+7 917 295-77-25</a
-                >
-              </li>
-            </ul>
-            <button class="menu__burger">
-              <span></span>
-            </button>
+              <button class="menu__burger">
+                <span></span>
+              </button>
+            </div>
           </nav>
         </div>
       </div>
