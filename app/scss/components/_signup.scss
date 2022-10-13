@@ -28,39 +28,51 @@
 
   &__text {
     font-weight: 500;
-
     letter-spacing: 0.02em;
-
     color: #dedede;
     margin-bottom: 2.4rem;
   }
+
   &__tabs {
     display: flex;
     max-width: 32rem;
     justify-content: flex-start;
     align-items: center;
-    background: $darkgrey-text;
     border-radius: 1.2rem;
     margin-bottom: 3.6rem;
     overflow: hidden;
   }
+
   &__tab {
+    display: inline-block;
     letter-spacing: 0.02em;
     color: #ffffff;
     opacity: 0.8;
     padding: 0.8rem 1.6rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $darkgrey-text;
   }
-  &__tab:not(:last-child) {
+
+  &__tab-option {
+    flex-grow: 1;
+  }
+
+  &__tab--specialist,
+  &__tab--participant {
     border-right: 1px solid rgba(217, 217, 217, 0.2);
   }
-  &__tab--active {
-    letter-spacing: 0.02em;
-    color: #ffffff;
 
+  &__tab-input {
+    display: none;
+  }
+
+  &__tab-input:checked + label {
     background: #4a4a4a;
     opacity: 1;
-    padding: 0.8rem 1.6rem;
+    border-right: 1px solid transparent;
   }
 
   &__bottom {
@@ -80,5 +92,23 @@
     font-size: 2rem;
     line-height: 3rem;
     letter-spacing: 0.02em;
+  }
+}
+
+@media (max-width: 768px) {
+  .signup {
+    width: 90%;
+  }
+}
+
+@media (max-width: 640px) {
+  .signup {
+    &__tab {
+      padding: 0.8rem 0.8rem;
+    }
+
+    &__title {
+      font-size: 2.8rem;
+    }
   }
 }

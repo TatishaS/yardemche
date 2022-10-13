@@ -64,12 +64,49 @@
         <div class="signup__inner">
           <h1 class="signup__title">Создать аккаунт</h1>
           <p class="signup__text">Стань частью большого сообщества «ЯРДЭМЧЕ»</p>
-          <div class="signup__tabs">
-            <div class="signup__tab signup__tab--active">Специалист</div>
-            <div class="signup__tab">Участник</div>
-            <div class="signup__tab">Фонд</div>
-          </div>
+
           <form class="signup__form form">
+            <ul class="signup__tabs">
+              <li class="signup__tab-option">
+                <input
+                  class="visually-hidden signup__tab-input"
+                  type="radio"
+                  name="type"
+                  value="specialist"
+                  id="specialist"
+                  checked
+                />
+                <label
+                  class="signup__tab signup__tab--specialist"
+                  for="specialist"
+                  >Специалист</label
+                >
+              </li>
+              <li class="signup__tab-option">
+                <input
+                  class="visually-hidden signup__tab-input"
+                  type="radio"
+                  name="type"
+                  value="participant"
+                  id="participant"
+                />
+                <label
+                  class="signup__tab signup__tab--participant"
+                  for="participant"
+                  >Участник</label
+                >
+              </li>
+              <li class="signup__tab-option">
+                <input
+                  class="visually-hidden signup__tab-input"
+                  type="radio"
+                  name="type"
+                  value="fund"
+                  id="fund"
+                />
+                <label class="signup__tab" for="fund">Фонд</label>
+              </li>
+            </ul>
             <label class="form__label" for="name">Имя</label>
             <input
               type="text"
