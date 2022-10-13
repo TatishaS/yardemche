@@ -28,7 +28,7 @@ body {
   margin: 0 auto;
 }
 
-.main__body {
+/* .main__body {
   &--fullscreen {
     min-height: 100vh;
     background-image: url(../images/main-bg.jpg);
@@ -36,19 +36,22 @@ body {
     background-position: top center;
     background-size: cover;
   }
-}
+} */
 
 .main {
   flex: 1 0 auto;
 
-  &--signup {
-    min-height: calc(100vh - 12rem);
+  &--signup,
+  &--login {
+    min-height: 100vh;
+    background-image: url(../images/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    //min-height: calc(100vh - 12rem);
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  &--login {
-    min-height: calc(100vh - 16rem);
   }
 }
 
