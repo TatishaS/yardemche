@@ -15,7 +15,7 @@
     <title>Ярдэмче</title>
   </head>
 
-  <body class="main__body">
+  <body>
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -24,7 +24,7 @@
               <img src="images/logo-header.svg" alt="Ярдэмче лого" />
             </a>
 
-            <ul class="header__menu menu">
+            <ul class="header__menu menu menu--desktop">
               <li class="menu__item">
                 <svg
                   class="menu__item-img menu__item-img--login"
@@ -50,6 +50,54 @@
                 >
               </li>
             </ul>
+            <div class="menu__list-wrapper">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink"
+                    >Специалисты
+                    <img
+                      src="./images/caret-down.svg"
+                      alt="Показать"
+                      class="menu__list-itemimg"
+                    />
+                  </a>
+                  <ul class="menu__submenu">
+                    <li>
+                      <a href="#" class="menu__subitem-link"
+                        >Красота и здоровье</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="menu__subitem-link">Психология</a>
+                    </li>
+
+                    <li><a href="#" class="menu__subitem-link">Тренинги</a></li>
+                  </ul>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">О нас</a>
+                </li>
+              </ul>
+              <div class="menu__list-btns">
+                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
+                  >Войти</a
+                >
+
+                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
+                  >Регистрация</a
+                >
+
+                <!--                 <li class="menu__list-item menu__list-item--mobile">
+                  <a href="tel:+79172957725" class="menu__list-itemlink"
+                    >+7 917 295-77-25</a
+                  >
+                </li> -->
+              </div>
+            </div>
+
             <button class="menu__burger">
               <span></span>
             </button>
