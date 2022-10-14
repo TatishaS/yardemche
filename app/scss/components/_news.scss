@@ -1,0 +1,87 @@
+.news {
+  margin-top: 7.2rem;
+  &__title {
+    margin-bottom: 3.6rem;
+  }
+
+  &__items {
+    display: grid;
+    height: 65.6rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 3.6rem 3rem;
+
+    margin-bottom: 4.8rem;
+  }
+
+  &__item:first-child,
+  &__item:nth-child(2),
+  &__item:nth-child(3) {
+    grid-column: span 2;
+  }
+
+  &__item:nth-child(4),
+  &__item:nth-child(5) {
+    grid-column: span 3;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    padding: 2.4rem;
+    border-radius: 2.4rem;
+    background-image: url(../../images/default-image.png);
+    overflow: hidden;
+
+    background-size: cover;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 61.29%,
+        rgba(0, 0, 0, 0.6) 100%
+      );
+      z-index: 2;
+    }
+  }
+
+  &__item-inner {
+    position: relative;
+
+    z-index: 3;
+  }
+
+  &__item-text {
+    color: #fff;
+
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+  }
+
+  &__btn {
+    margin: 0 auto;
+    width: auto;
+    background-color: $button-orange;
+    color: #fff;
+
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    padding: 1rem 5.4rem;
+
+    border: none;
+  }
+
+  &__btn:hover {
+    background-color: #c2770f;
+  }
+}

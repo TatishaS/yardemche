@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <script defer src="js/main.min.js"></script>
     <title>Ярдэмче</title>
@@ -16,56 +22,158 @@
             <a class="header__logo" href="#">
               <img src="images/logo-header.svg" alt="Ярдэмче лого" />
             </a>
-            <div class="header__nav-wrapper">
-              <ul class="header__menu menu user-nav">
-                <li class="menu__item">
-                  <svg
-                    class="menu__item-img menu__item-img--login"
-                    width="20"
-                    height="20"
-                  >
-                    <use xlink:href="#icon-login"></use>
-                  </svg>
-                  <a href="#" class="menu__list-link">Войти</a>
-                </li>
-                <li class="menu__item menu__item--registration">
-                  <svg class="menu__item-img" width="20" height="20">
-                    <use xlink:href="#icon-register"></use>
-                  </svg>
-                  <a href="#" class="menu__list-link">Регистрация</a>
-                </li>
-                <li class="menu__item menu__item--phone">
-                  <svg class="menu__item-img" width="20" height="20">
-                    <use xlink:href="#icon-call"></use>
-                  </svg>
-                  <a href="tel:+79172957725" class="menu__list-link"
-                    >+7 917 295-77-25</a
-                  >
-                </li>
-              </ul>
+
+            <ul class="header__menu menu menu--desktop">
+              <li class="menu__item">
+                <svg
+                  class="menu__item-img menu__item-img--login"
+                  width="20"
+                  height="20"
+                >
+                  <use xlink:href="#icon-login"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Войти</a>
+              </li>
+              <li class="menu__item menu__item--registration">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-register"></use>
+                </svg>
+                <a href="#" class="menu__list-link">Регистрация</a>
+              </li>
+              <li class="menu__item menu__item--phone">
+                <svg class="menu__item-img" width="20" height="20">
+                  <use xlink:href="#icon-call"></use>
+                </svg>
+                <a href="tel:+79172957725" class="menu__list-link"
+                  >+7 917 295-77-25</a
+                >
+              </li>
+            </ul>
+            <div class="menu__list-wrapper active">
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-itemlink">Главная</a>
                 </li>
                 <li class="menu__list-item">
-                  <a href="#" class="menu__list-itemlink">Специалисты</a>
+                  <a href="#" class="menu__list-itemlink"
+                    >Специалисты
+                    <img
+                      src="./images/caret-down.svg"
+                      alt="Показать"
+                      class="menu__list-itemimg"
+                    />
+                  </a>
+                  <ul class="menu__submenu">
+                    <li>
+                      <a href="#" class="menu__subitem-link"
+                        >Красота и здоровье</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="menu__subitem-link">Психология</a>
+                    </li>
+
+                    <li><a href="#" class="menu__subitem-link">Тренинги</a></li>
+                  </ul>
                 </li>
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-itemlink">О нас</a>
                 </li>
               </ul>
+              <div class="menu__list-btns">
+                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
+                  >Войти</a
+                >
 
-              <button class="menu__burger">
-                <span></span>
-              </button>
+                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
+                  >Регистрация</a
+                >
+
+                <!--                 <li class="menu__list-item menu__list-item--mobile">
+                  <a href="tel:+79172957725" class="menu__list-itemlink"
+                    >+7 917 295-77-25</a
+                  >
+                </li> -->
+              </div>
             </div>
+
+            <button class="menu__burger">
+              <span></span>
+            </button>
           </nav>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <h1>Здесь будет Главная</h1>
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title title">Новости</h2>
+          <ul class="news__items">
+            <li
+              class="news__item"
+              style="background-image: url('./images/news-1.jpg')"
+            >
+              <div class="news__item-inner">
+                <div class="news__item-info">
+                  <a href="#" class="news__item-text"
+                    >Вечеринка для клиентов Ярдэмче</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="news__item"
+              style="background-image: url('./images/news-2.png')"
+            >
+              <div class="news__item-inner">
+                <div class="news__item-info">
+                  <a href="#" class="news__item-text"
+                    >Вечеринка для клиентов Ярдэмче</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="news__item"
+              style="background-image: url('./images/news-2.png')"
+            >
+              <div class="news__item-inner">
+                <div class="news__item-info">
+                  <a href="#" class="news__item-text"
+                    >Вечеринка для клиентов Ярдэмче</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="news__item"
+              style="background-image: url('./images/news-4.png')"
+            >
+              <div class="news__item-inner">
+                <div class="news__item-info">
+                  <a href="#" class="news__item-text"
+                    >Вечеринка для клиентов Ярдэмче</a
+                  >
+                </div>
+              </div>
+            </li>
+            <li
+              class="news__item"
+              style="background-image: url('./images/news-5.png')"
+            >
+              <div class="news__item-inner">
+                <div class="news__item-info">
+                  <a href="#" class="news__item-text"
+                    >Вечеринка для клиентов Ярдэмче</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="news__btn btn">Показать еще</button>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">

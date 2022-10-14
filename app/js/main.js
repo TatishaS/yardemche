@@ -13,7 +13,7 @@ function enableScroll() {
 // Запрещаем скролл заднего фона при открытом модальном окне
 function disableScroll() {
   const body = document.body;
-  //body.removeAttribute('data-position');
+
   let pagePosition = window.scrollY;
   body.classList.add('disable-scroll');
   body.dataset.position = pagePosition;
@@ -23,15 +23,15 @@ function disableScroll() {
 /* Burger menu */
 function burgerMenu() {
   const burger = document.querySelector('.menu__burger');
-  const menuList = document.querySelector('.menu__list');
-  const userNav = document.querySelector('.user-nav');
+  const menuList = document.querySelector('.menu__list-wrapper');
+
   const overlay = document.querySelector('.overlay');
   //const body = document.querySelector('body');
   const menuLinks = document.querySelectorAll('.menu__list-link');
 
   function hideBurgerMenu() {
     menuList.classList.remove('active');
-    userNav.classList.remove('active');
+
     burger.classList.remove('active-burger');
     overlay.classList.remove('overlay--show');
   }
@@ -39,7 +39,7 @@ function burgerMenu() {
   burger.addEventListener('click', () => {
     if (!menuList.classList.contains('active')) {
       menuList.classList.add('active');
-      userNav.classList.add('active');
+
       burger.classList.add('active-burger');
 
       overlay.classList.add('overlay--show');
@@ -56,7 +56,7 @@ function burgerMenu() {
   window.addEventListener('resize', () => {
     if (window.innerWidth > 640) {
       menuList.classList.remove('active');
-      userNav.classList.remove('active');
+
       burger.classList.remove('active-burger');
     }
   });
