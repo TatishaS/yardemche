@@ -19,6 +19,7 @@
     max-width: 100%;
     border-radius: 1.2rem;
     object-fit: cover;
+    height: 37rem;
   }
   &__img--desktop {
     display: block;
@@ -196,10 +197,14 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .client {
     &__profile-inner {
       grid-template-columns: 1fr;
+    }
+
+    &__img {
+      height: 18rem;
     }
     &__img--desktop {
       display: none;
