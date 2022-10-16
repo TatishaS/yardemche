@@ -289,6 +289,9 @@
                     class="portfolio__slider-img"
                   />
                 </div>
+                <button class="portfolio__slide-delete" type="submit">
+                  x
+                </button>
               </div>
               <div class="portfolio__slider-item swiper-slide">
                 <div class="portfolio__item-wrapper">
@@ -298,6 +301,9 @@
                     class="portfolio__slider-img"
                   />
                 </div>
+                <button class="portfolio__slide-delete" type="submit">
+                  x
+                </button>
               </div>
               <div class="portfolio__slider-item swiper-slide">
                 <div class="portfolio__item-wrapper">
@@ -306,6 +312,9 @@
                     alt="Фото портфолио"
                     class="portfolio__slider-img"
                   />
+                  <button class="portfolio__slide-delete" type="submit">
+                    x
+                  </button>
                 </div>
               </div>
               <div class="portfolio__slider-item swiper-slide">
@@ -399,79 +408,94 @@
             <h2 class="services__title section-title">Ваши услуги</h2>
             <button class="services__btn btn">Добавить услугу</button>
           </div>
-          <ul class="services__list">
-            <li
-              class="services__item"
-              style="background-image: url('./images/services-1.jpg')"
-            >
-              <div class="services__item-inner">
-                <div class="services__item-data">
-                  <h3 class="services__item-title">
-                    Психологическая помощь 2 сеанса
-                  </h3>
-                  <div class="services__item-params">
-                    <span class="services__param services__param--type"
-                      >Психология</span
-                    >
-                    <span class="services__item-divider"></span>
-                    <span class="services__param services__param--price"
-                      >5 000 рублей</span
-                    >
+          <div class="services__list-container">
+            <ul class="services__list">
+              <li
+                class="services__item"
+                style="background-image: url('./images/services-1.jpg')"
+              >
+                <div class="services__item-inner">
+                  <div class="services__item-data">
+                    <h3 class="services__item-title">
+                      Психологическая помощь 2 сеанса
+                    </h3>
+                    <div class="services__item-params">
+                      <span class="services__param services__param--type"
+                        >Психология</span
+                      >
+                      <span class="services__item-divider"></span>
+                      <span class="services__param services__param--price"
+                        >5 000 рублей</span
+                      >
+                      <span class="services__item-divider"></span>
+                      <a href="#" class="services__param services__param--edit">Редактировать</a>
+                    </div>
+  
+                    <h6 class="services__info-title">Описание</h6>
+                    <p class="services__info-text">
+                      Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
+                      с Вами!
+                    </p>
+                    <p class="services__info-text">
+                      10 лет работы в государственной службе, 10 лет практической
+                      работы с детьми, взрослыми и семьями. Индивидуальная и
+                      групповая работа, тренинги и семинары. Счастливые глаза
+                      детей и положительные отзывы взрослых. Всё это позволяет мне
+                      сказать: «Мы вместе решим возникшие вопросы, избавимся от
+                      проблем и будем идти вперёд с уверенностью и блеском в
+                      глазах».
+                    </p>
                   </div>
+                </div>
+              </li>
+              <li
+                class="services__item"
+                style="background-image: url('./images/services-2.jpg')"
+              >
+                <div class="services__item-inner">
+                  <div class="services__item-data">
+                    <h3 class="services__item-title">
+                      Психологическая помощь 1 сеанс
+                    </h3>
+                    <div class="services__item-params">
+                      <span class="services__param services__param--type"
+                        >Психология</span
+                      >
+                      <span class="services__item-divider"></span>
+                      <span class="services__param services__param--price"
+                        >3 000 рублей</span
+                      >
+                      <span class="services__item-divider"></span>
+                      <a href="#" class="services__param services__param--edit">Редактировать</a>
+                    </div>
+                    <h6 class="services__info-title">Описание</h6>
+                    <p class="services__info-text">
+                      Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
+                      с Вами!
+                    </p>
+                    <p class="services__info-text">
+                      10 лет работы в государственной службе, 10 лет практической
+                      работы с детьми, взрослыми и семьями. Индивидуальная и
+                      групповая работа, тренинги и семинары. Счастливые глаза
+                      детей и положительные отзывы взрослых. Всё это позволяет мне
+                      сказать: «Мы вместе решим возникшие вопросы, избавимся от
+                      проблем и будем идти вперёд с уверенностью и блеском в
+                      глазах».
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="services__slider-btns">
+              <a class="services__arrow services__button-prev">
+                <img src="./images/icon-arrow-left.svg" alt="" />
+              </a>
+              <a class="services__arrow services__button-next">
+                <img src="./images/icon-arrow-right.svg" alt="" />
+              </a>
+            </div>
+          </div>
 
-                  <h6 class="services__info-title">Описание</h6>
-                  <p class="services__info-text">
-                    Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
-                    с Вами!
-                  </p>
-                  <p class="services__info-text">
-                    10 лет работы в государственной службе, 10 лет практической
-                    работы с детьми, взрослыми и семьями. Индивидуальная и
-                    групповая работа, тренинги и семинары. Счастливые глаза
-                    детей и положительные отзывы взрослых. Всё это позволяет мне
-                    сказать: «Мы вместе решим возникшие вопросы, избавимся от
-                    проблем и будем идти вперёд с уверенностью и блеском в
-                    глазах».
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li
-              class="services__item"
-              style="background-image: url('./images/services-2.jpg')"
-            >
-              <div class="services__item-inner">
-                <div class="services__item-data">
-                  <h3 class="services__item-title">
-                    Психологическая помощь 1 сеанс
-                  </h3>
-                  <div class="services__item-params">
-                    <span class="services__param services__param--type"
-                      >Психология</span
-                    >
-                    <span class="services__item-divider"></span>
-                    <span class="services__param services__param--price"
-                      >3 000 рублей</span
-                    >
-                  </div>
-                  <h6 class="services__info-title">Описание</h6>
-                  <p class="services__info-text">
-                    Психолог, Детский психолог, Арт-терапевт. Жду встречи именно
-                    с Вами!
-                  </p>
-                  <p class="services__info-text">
-                    10 лет работы в государственной службе, 10 лет практической
-                    работы с детьми, взрослыми и семьями. Индивидуальная и
-                    групповая работа, тренинги и семинары. Счастливые глаза
-                    детей и положительные отзывы взрослых. Всё это позволяет мне
-                    сказать: «Мы вместе решим возникшие вопросы, избавимся от
-                    проблем и будем идти вперёд с уверенностью и блеском в
-                    глазах».
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
         </div>
       </section>
         
@@ -605,6 +629,8 @@
             </ul>
           </section>
     </main>
+
+
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -625,6 +651,8 @@
         </div>
       </div>
     </footer>
+
+    <div class="overlay"></div>
     <svg
       class="visually-hidden"
       width="0"

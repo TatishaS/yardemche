@@ -80,6 +80,12 @@
   &__param:not(:first-child) {
     margin-left: 1.6rem;
   }
+  &__param--edit {
+    color: #fff;
+
+    border-bottom: 0.1rem solid #fff;
+    cursor: pointer;
+  }
 
   &__info-title {
     font-weight: 700;
@@ -87,12 +93,65 @@
     line-height: 2.4rem;
     margin-bottom: 0.8rem;
   }
+  &__list-container {
+    position: relative;
+  }
+
+  &__arrow {
+    border: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    position: absolute;
+
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  &__button-prev {
+    left: -7rem;
+  }
+
+  &__button-next {
+    right: -7rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .services {
+    &__button-prev {
+      top: -5rem;
+      left: 18.5%;
+    }
+
+    &__button-next {
+      top: -5rem;
+      left: 24.5%;
+    }
+  }
 }
 
 @media (max-width: 1024px) {
   .services {
     &__list {
       grid-gap: 1.2rem;
+    }
+
+    &__item-params {
+      flex-wrap: wrap;
+    }
+
+    &__button-prev {
+      top: -5rem;
+      left: 18.5%;
+    }
+
+    &__button-next {
+      top: -5rem;
+      left: 24.5%;
     }
   }
 }
@@ -107,6 +166,30 @@
     &__item-title {
       line-height: 2.4rem;
     }
+
+    &__button-prev {
+      top: -5rem;
+      left: 22.5%;
+    }
+
+    &__button-next {
+      top: -5rem;
+      left: 31.5%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    &__button-prev {
+      top: -5rem;
+      left: 30.5%;
+    }
+
+    &__button-next {
+      top: -5rem;
+      left: 39.5%;
+    }
   }
 }
 
@@ -114,6 +197,37 @@
   .services {
     &__item {
       height: 60rem;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .services {
+    &__top {
+      margin-bottom: 4.8rem;
+    }
+
+    &__arrow {
+      width: 2.4rem;
+      height: 2.4rem;
+    }
+
+    &__button-prev {
+      top: -3.6rem;
+      left: 5%;
+    }
+
+    &__button-next {
+      top: -3.6rem;
+      left: 15.5%;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .services {
+    &__param:last-child {
+      margin-left: 0;
     }
   }
 }
