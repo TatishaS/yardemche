@@ -9,6 +9,70 @@
     align-items: center;
   }
 
+  &__header--large {
+    display: block;
+  }
+
+  &__header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__header-row--first {
+    margin-bottom: 1.2rem;
+  }
+
+  &__input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  &__input {
+    font-weight: inherit;
+    background-color: #dcf2f4;
+    opacity: 0.8;
+    color: $darkgrey-text;
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    border-radius: 0.8rem;
+    border: none;
+    outline: none;
+  }
+  &__input::placeholder {
+    font-weight: inherit;
+    color: rgba(34, 34, 34, 0.6);
+  }
+  &__label {
+    margin-bottom: 0.4rem;
+  }
+  &__select-input {
+    width: 18rem;
+    align-self: center;
+    text-align: left;
+
+    background: #dcf2f4;
+    border: none;
+    border-radius: 0.8rem;
+    padding: 1.2rem 5.2rem 1.2rem 1.2rem;
+
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    color: #575a7c;
+
+    opacity: 0.8;
+
+    cursor: pointer;
+    appearance: none;
+    background-image: url('../../images/icon-arrow-down.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+  }
+
   &__title-input {
     font-weight: 700;
     font-size: 2.4rem;
@@ -147,6 +211,16 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .edit-form {
+    &__header-row {
+      //justify-content: flex-start;
+      flex-wrap: wrap;
+      //align-items: initial;
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .edit-form {
     &__header {
@@ -159,11 +233,20 @@
     &__title-input {
       margin-bottom: 1.2rem;
     }
+
+    &__input {
+      width: 18rem;
+    }
   }
 }
 
 @media (max-width: 860px) {
   .edit-form {
+    &__header-row {
+      justify-content: flex-start;
+
+      align-items: initial;
+    }
     &__btns {
       display: flex;
       flex-wrap: wrap;
@@ -172,6 +255,18 @@
 
     &__btn {
       margin-bottom: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .edit-form {
+    &__select-input {
+      width: 16rem;
+
+      padding: 1.2rem 3rem 1.2rem 1.2rem;
+      background-size: 1.6rem 1.6rem;
+      background-position: 90% 50%;
     }
   }
 }

@@ -505,6 +505,113 @@
         </form>
       </div>
     </div>
+    <div class="modal modal__edit-user">
+      <div class="modal__wrapper">
+        <form class="modal__edit-form edit-form">
+          <div class="edit-form__header edit-form__header--large">
+            <div class="edit-form__header-row edit-form__header-row--first">
+              <div class="edit-form__btns">
+                <div class="edit-form__btn">
+                  <div class="edit-form__file-preview" id="image-preview">
+                    <img
+                      src="./images/icon-image.svg"
+                      alt=""
+                      class="edit-form__img-icon"
+                    />
+                  </div>
+                  <input
+                    class="edit-form__file-input visually-hidden"
+                    type="file"
+                    name="photo"
+                    id="upload"
+                    accept="image/png, image/jpg, image/jpeg"
+                  />
+                  <label class="edit-form__file-label" for="upload"
+                    >Изображение</label
+                  >
+                </div>
+
+                <div class="edit-form__btn">
+                  <button class="edit-form__save" type="submit">
+                    <img
+                      src="./images/icon-tick.svg"
+                      alt="Иконка"
+                      class="edit-form__icon"
+                    />Сохранить
+                  </button>
+                </div>
+                <div class="edit-form__btn">
+                  <button class="edit-form__close">
+                    <img
+                      src="./images/icon-cancel.svg"
+                      alt="Иконка"
+                      class="edit-form__icon"
+                    />
+                    Отменить
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="edit-form__header-row edit-form__header-row--second">
+              <div class="edit-form__input-wrapper">
+                <label class="edit-form__label" for="name">Имя</label>
+                <input class="edit-form__input" id="name" name="name type="text"
+                placeholder="Имя" required />
+              </div>
+              <div class="edit-form__input-wrapper">
+                <label class="edit-form__label" for="lastname">Фамилия</label>
+                <input
+                  class="edit-form__input"
+                  id="lastname"
+                  name="lastname"
+                  type="text"
+                  placeholder="Фамилия"
+                  required
+                />
+              </div>
+              <div class="edit-form__input-wrapper">
+                <label for="speciality1" class="edit-form__label"
+                  >Специальность</label
+                >
+                <select class="edit-form__select-input" id="speciality1">
+                  <option value="Косметолог">Косметолог</option>
+                  <option value="Дерматолог">Дерматолог</option>
+                  <option value="Коуч">Коуч</option>
+                  <option value="Клинический психолог">
+                    Клинический психолог
+                  </option>
+                </select>
+              </div>
+
+              <div class="edit-form__input-wrapper">
+                <label for="city" class="edit-form__label">Город</label>
+                <select class="edit-form__select-input" id="city">
+                  <option value="Краснодар">Краснодар</option>
+                  <option value="Ставрополь">Ставрополь</option>
+                  <option value="Ростов">Ростов</option>
+                  <option value="Ялта">Ялта</option>
+                  <option value="Москва">Москва</option>
+
+                  <option value="Кисловодск">Кисловодск</option>
+                  <option value="Сочи">Сочи</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="edit-form__content">
+            <label class="edit-form__textarea-label" for="description">
+              Описание
+            </label>
+            <textarea
+              class="edit-form__textarea"
+              name="description"
+              placeholder="Напишите здесь что-нибудь..."
+              rows="10"
+            ></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
     <svg
       class="visually-hidden"
       width="0"
