@@ -1,7 +1,23 @@
 .news {
-  margin-top: 7.2rem;
+  padding-top: 7.2rem;
+  padding-bottom: 7.2rem;
+  &__tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
   &__title {
+    background-color: transparent;
+    border: none;
+    outline: none;
     margin-bottom: 3.6rem;
+    opacity: 0.6;
+    margin-right: 3.6rem;
+    cursor: pointer;
+  }
+  &__title--active {
+    margin-bottom: 3.6rem;
+    opacity: 1;
   }
 
   &__items {

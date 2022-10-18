@@ -64,7 +64,7 @@ function burgerMenu() {
   //overlay.addEventListener('click', hideBurgerMenu);
 }
 
-let swiper = new Swiper('.swiper-slider', {
+let swiper = new Swiper('.portfolio__swiper-slider', {
   // Optional parameters
   slidesPerView: 1,
   spaceBetween: 10,
@@ -84,6 +84,23 @@ let swiper = new Swiper('.swiper-slider', {
       slidesPerView: 2,
       spaceBetween: 20,
     },
+  },
+});
+
+let swiperTop = new Swiper('.top__swiper-slider', {
+  // Optional parameters
+  slidesPerView: 1,
+
+  autoplay: {
+    delay: 5000,
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: '.swiper-pagination--top',
+    clickable: true,
   },
 });
 

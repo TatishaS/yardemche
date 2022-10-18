@@ -1,0 +1,41 @@
+.accent {
+  background-image: url(../../images/accent-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 3;
+    padding: 5.6rem 0;
+  }
+  &__text {
+    font-family: $font-cormorant;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    color: #fff;
+    margin-bottom: 3.6rem;
+  }
+
+  &__btn {
+    max-width: 23rem;
+    backdrop-filter: blur(20px);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    padding: 1rem 5.9rem;
+  }
+}

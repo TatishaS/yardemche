@@ -101,8 +101,60 @@ body {
   font-weight: 600;
   font-size: 2.4rem;
   line-height: 2.4rem;
-
   color: $light-text;
+}
+
+.title-main {
+  font-family: $font-cormorant;
+  font-weight: 500;
+  font-size: 4.8rem;
+  line-height: 4.2rem;
+  color: $darkest-text;
+}
+
+/* Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  z-index: 10;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 9rem;
+  height: 3rem;
+}
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+/* Bullets */
+.swiper-pagination-bullet {
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: inline-block;
+  background: #fff;
+  opacity: 0.4;
+}
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  appearance: none;
+}
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+.swiper-pagination-white .swiper-pagination-bullet {
+  background: #fff;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #fff;
 }
 
 .swiper-button-prev,
