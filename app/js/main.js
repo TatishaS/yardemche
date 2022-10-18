@@ -94,10 +94,10 @@ let swiperTop = new Swiper('.top__swiper-slider', {
   autoplay: {
     delay: 5000,
   },
-  effect: 'fade',
+  /*   effect: 'fade',
   fadeEffect: {
     crossFade: true,
-  },
+  }, */
   pagination: {
     el: '.swiper-pagination--top',
     clickable: true,

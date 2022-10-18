@@ -39,7 +39,7 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/swiper/swiper-bundle.min.js',
-    'node_modules/swiper/modules/effect-fade/effect-fade.js',
+    //'node_modules/swiper/modules/effect-fade/effect-fade.js',
     'app/js/main.js',
   ])
     .pipe(concat('main.min.js'))
