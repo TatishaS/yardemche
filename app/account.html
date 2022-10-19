@@ -433,13 +433,6 @@
 
             <div class="edit-form__btns">
               <div class="edit-form__btn">
-                <div class="edit-form__file-preview" id="image-preview">
-                  <img
-                    src="./images/icon-image.svg"
-                    alt=""
-                    class="edit-form__img-icon"
-                  />
-                </div>
                 <input
                   class="edit-form__file-input visually-hidden"
                   type="file"
@@ -447,8 +440,15 @@
                   id="upload"
                   accept="image/png, image/jpg, image/jpeg"
                 />
-                <label class="edit-form__file-label" for="upload"
-                  >Изображение</label
+                <label class="edit-form__file-label" for="upload">
+                  <div class="edit-form__file-preview" id="image-preview">
+                    <img
+                      src="./images/icon-image.svg"
+                      alt=""
+                      class="edit-form__img-icon"
+                    />
+                  </div>
+                  Изображение</label
                 >
               </div>
 
@@ -505,7 +505,7 @@
         </form>
       </div>
     </div>
-    <div class="modal modal__edit-user">
+    <div class="modal modal__edit-user active">
       <div class="modal__wrapper">
         <form class="modal__edit-form edit-form">
           <div class="edit-form__header edit-form__header--large">
@@ -569,7 +569,7 @@
                   required
                 />
               </div>
-              <div class="edit-form__input-wrapper">
+              <!--               <div class="edit-form__input-wrapper">
                 <label for="speciality1" class="edit-form__label"
                   >Специальность</label
                 >
@@ -581,7 +581,7 @@
                     Клинический психолог
                   </option>
                 </select>
-              </div>
+              </div> -->
 
               <div class="edit-form__input-wrapper">
                 <label for="city" class="edit-form__label">Город</label>
@@ -612,6 +612,7 @@
         </form>
       </div>
     </div>
+
     <svg
       class="visually-hidden"
       width="0"
