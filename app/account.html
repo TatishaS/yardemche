@@ -505,7 +505,7 @@
         </form>
       </div>
     </div>
-    <div class="modal modal__edit-user active">
+    <div class="modal modal__edit-user">
       <div class="modal__wrapper">
         <form class="modal__edit-form edit-form">
           <div class="edit-form__header edit-form__header--large">
@@ -612,7 +612,110 @@
         </form>
       </div>
     </div>
+    <!--     <div class="modal modal__success active">
+      <div class="modal__close modal__success-close">x</div>
+      <div class="modal__success-inner">
+        <p class="modal__success-msg">Заказ успешно отправлен!</p>
+        <button class="modal__success-btn btn">Продолжить</button>
+      </div>
+    </div> -->
+    <div class="modal modal__review active">
+      <div class="modal__close modal__cross">x</div>
+      <div class="modal__review-inner">
+        <form action="" class="modal__review-form">
+          <span class="client__stat-parameter">Ваша оценка</span>
+          <div class="client__rating-block rating modal__review-rating">
+            <span class="client__score">8.6</span>
+            <div class="client__rating-stars rating__stars">
+              <input
+                disabled
+                checked
+                class="rating__input rating__input--none visually-hidden"
+                id="star0-top"
+                value="0"
+                type="radio"
+                name="rating"
+              />
 
+              <label
+                for="star1-top"
+                class="rating__label"
+                aria-label="1 звезда"
+              >
+                <svg class="rating__star" width="24" height="24">
+                  <use xlink:href="#star"></use>
+                </svg>
+              </label>
+              <input
+                type="radio"
+                id="star1-top"
+                class="rating__input visually-hidden"
+                name="rating"
+                value="1"
+              />
+
+              <label for="star2-top" class="rating__label" aria-label="2 звезды"
+                ><svg class="rating__star" width="24" height="24">
+                  <use xlink:href="#star"></use></svg
+              ></label>
+              <input
+                type="radio"
+                id="star2-top"
+                class="rating__input visually-hidden"
+                name="rating"
+                value="2"
+              />
+
+              <label for="star3-top" class="rating__label" aria-label="3 звезды"
+                ><svg class="rating__star" width="24" height="24">
+                  <use xlink:href="#star"></use></svg
+              ></label>
+              <input
+                type="radio"
+                id="star3-top"
+                class="rating__input visually-hidden"
+                name="rating"
+                value="3"
+                checked
+              />
+
+              <label for="star4-top" class="rating__label" aria-label="4 звезды"
+                ><svg class="rating__star" width="24" height="24">
+                  <use xlink:href="#star"></use></svg
+              ></label>
+              <input
+                type="radio"
+                id="star4-top"
+                class="rating__input visually-hidden"
+                name="rating"
+                value="4"
+              />
+
+              <label for="star5-top" class="rating__label" aria-label="5 звезд"
+                ><svg class="rating__star" width="24" height="24">
+                  <use xlink:href="#star"></use></svg
+              ></label>
+              <input
+                type="radio"
+                id="star5-top"
+                class="rating__input visually-hidden"
+                name="rating"
+                value="5"
+              />
+            </div>
+          </div>
+          <textarea
+            rows="5"
+            class="modal__review-textarea"
+            placeholder="Напишите что-нибудь, если хотите..."
+            name="review"
+          ></textarea>
+          <button class="modal__review-btn btn" type="submit">
+            Оставить отзыв
+          </button>
+        </form>
+      </div>
+    </div>
     <svg
       class="visually-hidden"
       width="0"
