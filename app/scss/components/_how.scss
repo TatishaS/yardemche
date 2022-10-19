@@ -33,3 +33,11 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 740px) {
+  .how {
+    &__list-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

@@ -39,3 +39,15 @@
     padding: 1rem 5.9rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .accent {
+    &__inner {
+      padding: 4.2rem 0;
+    }
+    &__text {
+      font-size: 4rem;
+      line-height: 4.4rem;
+    }
+  }
+}
