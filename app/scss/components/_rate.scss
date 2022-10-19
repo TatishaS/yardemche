@@ -1,0 +1,21 @@
+.rate {
+  &__btn {
+    transform: all 0.5s ease;
+    width: 12rem;
+    height: 4.8rem;
+    background-color: $button-orange;
+    color: #fff;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border: none;
+    border-radius: 2.4rem;
+    z-index: 10;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    &:hover {
+      background-color: #c2770f;
+      opacity: 1;
+    }
+  }
+}
