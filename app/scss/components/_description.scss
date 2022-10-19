@@ -49,11 +49,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 11% 50%;
-    padding: 2.4rem 2.4rem 2.8rem 25.8rem;
+    padding: 3.6rem 2.4rem 3.6rem 25.8rem;
   }
   &__package-img {
     position: absolute;
-    top: -40%;
+    top: -35%;
     left: 5%;
     z-index: 5;
   }
@@ -63,7 +63,7 @@
     font-weight: 700;
     font-size: 3.6rem;
     line-height: 4.4rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.2rem;
   }
   &__package-bottom {
     display: flex;
