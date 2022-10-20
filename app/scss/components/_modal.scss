@@ -25,8 +25,8 @@
     padding: 2.4rem;
     width: 60rem;
     max-width: 90%;
-    min-height: 30vh;
-    max-height: 50vh;
+    min-height: 33rem;
+    max-height: 35rem;
     box-shadow: 0 0.4rem 4rem rgba(0, 0, 0, 0.12);
   }
   &.active {
@@ -148,5 +148,10 @@
     &__edit-user .edit-form__input-wrapper {
       width: 100%;
     }
+
+    /*  &.modal__review {
+      min-height: 27rem;
+      max-height: 31rem;
+    } */
   }
 }
