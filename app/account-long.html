@@ -273,7 +273,16 @@
         <div class="container">
           <div class="portfolio__top">
             <h2 class="portfolio__title section-title">Портфолио</h2>
-            <a class="portfolio__btn btn">Добавить фото</a>
+            <form>            <input
+              class="portfolio__file-input visually-hidden"
+              type="file"
+              name="upload-photo"
+              id="upload-photo"
+              accept="image/png, image/jpg, image/jpeg"
+            />
+            <label class="portfolio__btn btn" for="upload-photo">
+              Добавить фото</label
+            ></form>
           </div>
        
         
