@@ -238,6 +238,11 @@
     &__title-input {
       margin-bottom: 1.2rem;
     }
+    &__btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
 
     &__input {
       width: 18rem;
@@ -251,11 +256,6 @@
       justify-content: flex-start;
 
       align-items: initial;
-    }
-    &__btns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
     }
 
     &__btn {
