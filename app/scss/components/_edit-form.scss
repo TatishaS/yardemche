@@ -243,6 +243,9 @@
       flex-wrap: wrap;
       justify-content: flex-start;
     }
+    &__btn {
+      margin-bottom: 0.8rem;
+    }
 
     &__input {
       width: 18rem;
@@ -256,10 +259,6 @@
       justify-content: flex-start;
 
       align-items: initial;
-    }
-
-    &__btn {
-      margin-bottom: 1.6rem;
     }
   }
 }

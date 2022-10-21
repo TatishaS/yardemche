@@ -13,9 +13,14 @@
     border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
     border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
   }
+
+  &--fullscreen .menu__profile-name {
+    color: $grey-header;
+  }
   &__nav {
     position: relative;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 1.7rem 0;
   }
@@ -26,6 +31,7 @@
   }
   &__logo {
     margin-left: 1.3rem;
+    margin-right: 1.3rem;
   }
 }
 
@@ -34,36 +40,5 @@
     &__nav {
       flex-wrap: wrap;
     }
-
-    /*     &__nav-wrapper {
-      position: absolute;
-      background: rgba(255, 255, 255, 0.9);
-      top: 0;
-      right: 0;
-      &.active {
-        display: flex;
-        top: 6.4rem;
-        //left: 50%;
-        width: 80%;
-        //transform: translateX(-50%);
-        border: 0.1rem solid #bebebe;
-
-        flex-direction: column;
-        pointer-events: all;
-        justify-content: center;
-        align-items: center;
-        z-index: 200;
-        animation: fade 0.1s linear;
-        border-radius: 1.2rem;
-
-        padding: 3.6rem;
-      }
-    }
-    &__nav-wrapper.active .menu,
-    &__nav-wrapper.active .menu__list {
-      position: relative;
-      display: block;
-      z-index: 300;
-    } */
   }
 }

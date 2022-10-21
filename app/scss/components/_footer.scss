@@ -49,6 +49,13 @@
   &__contact {
     color: $grey-text;
   }
+
+  &--fullscreen .footer__inner,
+  &--fullscreen .footer__copyright,
+  &--fullscreen .footer__link,
+  &--fullscreen .footer__contact {
+    color: $grey-header;
+  }
 }
 
 @media (max-width: 860px) {

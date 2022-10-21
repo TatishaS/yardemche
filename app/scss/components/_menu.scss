@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-right: 6.4rem;
+    margin-right: 4.8rem;
     margin-left: auto;
   }
 
@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   &__item:not(:last-child) {
     margin-right: 3.6rem;
   }
@@ -161,8 +162,16 @@
     align-items: center;
     padding: 2rem 2rem;
   }
+
+  &__list-itemlink--mobile {
+    justify-content: flex-start;
+  }
+
   &__list-item:not(:last-child) {
     border-bottom: 1px solid #a5a5a5;
+  }
+  &__list-item.menu__list-item--mobile {
+    border-bottom: none;
   }
 
   &__subitem-link {
@@ -174,6 +183,10 @@
   &__list-itemlink:hover,
   &__subitem-link:hover {
     color: $button-orange;
+  }
+
+  &__list-itemlink--mobile {
+    margin-right: 3.6rem;
   }
   &__list-btn--mobile {
     margin-right: 2.4rem;
@@ -187,6 +200,37 @@
     justify-content: flex-start;
     align-items: center;
     flex: 1;
+  }
+
+  &__profile {
+    margin-right: 3.6rem;
+  }
+
+  &__profile-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__profile-img {
+    width: 4rem;
+    flex-shrink: 0;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    margin-right: 0.8rem;
+  }
+  &__profile-name {
+    display: block;
+    color: $darkgrey-text;
+  }
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    &__profile-name {
+      display: none;
+    }
   }
 }
 
@@ -207,13 +251,14 @@
 
     &__list-btns {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex: 1;
     }
 
     &__list-wrapper.active {
       width: 80%;
+    }
+    &__profile {
+      margin-left: auto;
     }
   }
 }

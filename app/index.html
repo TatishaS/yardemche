@@ -24,7 +24,7 @@
             </a>
 
             <ul class="header__menu menu menu--desktop menu--transparent">
-              <li class="menu__item">
+              <li class="menu__item menu__item--login">
                 <svg
                   class="menu__item-img menu__item-img--login"
                   width="20"
@@ -49,6 +49,16 @@
                 >
               </li>
             </ul>
+            <div class="menu__profile">
+              <a href="#" class="menu__profile-link">
+                <img
+                  src="./images/expert-1.jpg"
+                  alt="Фото профиля"
+                  class="menu__profile-img"
+                />
+                <span class="menu__profile-name">Александра</span>
+              </a>
+            </div>
             <div class="menu__list-wrapper">
               <ul class="menu__list">
                 <li class="menu__list-item">
@@ -79,22 +89,48 @@
                 <li class="menu__list-item">
                   <a href="#" class="menu__list-itemlink">О нас</a>
                 </li>
+                <li class="menu__list-item menu__list-item--authorized">
+                  <a href="#" class="menu__list-itemlink">Мои сообщения</a>
+                </li>
+                <li class="menu__list-item menu__list-item--authorized">
+                  <a href="#" class="menu__list-itemlink">Выйти</a>
+                </li>
               </ul>
-              <div class="menu__list-btns">
-                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
-                  >Войти</a
+              <ul class="menu__list-btns">
+                <li
+                  class="menu__list-item menu__list-item--mobile menu__list-item--login"
                 >
+                  <a
+                    href="#"
+                    class="menu__list-itemlink menu__list-itemlink--mobile"
+                  >
+                    <svg
+                      class="menu__item-img menu__item-img--login"
+                      width="20"
+                      height="20"
+                    >
+                      <use xlink:href="#icon-login"></use></svg
+                    >Войти</a
+                  >
+                </li>
 
-                <a href="#" class="menu__list-btn menu__list-btn--mobile btn"
-                  >Регистрация</a
-                >
+                <li class="menu__list-item menu__list-item--mobile">
+                  <a
+                    href="#"
+                    class="menu__list-itemlink menu__list-itemlink--mobile"
+                  >
+                    <svg class="menu__item-img" width="20" height="20">
+                      <use xlink:href="#icon-register"></use></svg
+                    >Регистрация</a
+                  >
+                </li>
 
                 <!--                 <li class="menu__list-item menu__list-item--mobile">
                   <a href="tel:+79172957725" class="menu__list-itemlink"
                     >+7 917 295-77-25</a
                   >
                 </li> -->
-              </div>
+              </ul>
             </div>
 
             <button class="menu__burger menu__burger--white">
