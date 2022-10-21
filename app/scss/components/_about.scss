@@ -6,6 +6,12 @@
 
     margin-bottom: 1.5rem;
   }
+  &__title--desktop {
+    display: block;
+  }
+  &__title--mobile {
+    display: none;
+  }
 
   &__btn {
     width: auto;
@@ -33,12 +39,11 @@
 
 @media (max-width: 640px) {
   .about {
-    &__top {
+    &__title--mobile {
       display: block;
-      margin-bottom: 2.4rem;
     }
-    &__title {
-      margin-bottom: 2.4rem;
+    &__title--desktop {
+      display: none;
     }
   }
 }
