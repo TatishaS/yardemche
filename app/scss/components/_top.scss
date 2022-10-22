@@ -193,11 +193,11 @@
 
     &__subtitle {
       font-size: 2rem;
-      line-height: 2rem;
+      line-height: 3rem;
     }
-    &__slider-item {
+    /*   &__slider-item {
       padding: 10rem 0 5.2rem;
-    }
+    } */
 
     &__tag-link {
       padding: 1.2rem 2.4rem;
@@ -209,7 +209,7 @@
   }
 }
 
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .top {
     &__title {
       font-size: 3.6rem;
@@ -224,4 +224,4 @@
       margin-bottom: 1.6rem;
     }
   }
-}
+} */

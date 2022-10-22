@@ -109,7 +109,7 @@ body {
   position: absolute;
   text-align: center;
   z-index: 10;
-  bottom: 1rem;
+  bottom: 4rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -124,15 +124,14 @@ body {
 
 /* Bullets */
 .swiper-pagination-bullet {
-  width: 1.2rem;
-  height: 1.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   display: inline-block;
   background: #fff;
   opacity: 0.4;
 }
 button.swiper-pagination-bullet {
-  border: none;
   margin: 0;
   padding: 0;
   box-shadow: none;

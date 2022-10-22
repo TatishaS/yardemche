@@ -1,5 +1,5 @@
 .description {
-  padding-top: 7.2rem;
+  padding-top: 5rem;
   padding-bottom: 7.2rem;
   &__title {
     max-width: 106rem;
@@ -36,7 +36,7 @@
   }
   &__packages-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
     margin-bottom: 4rem;
   }
@@ -45,25 +45,28 @@
     position: relative;
     box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.12);
     border-radius: 2.4rem;
-    background-image: url('../../images/circle.png');
-    background-size: contain;
+    background-image: url('../../images/package-bg.png');
+    background-size: 45%;
     background-repeat: no-repeat;
-    background-position: 11% 50%;
-    padding: 3.6rem 2.4rem 3.6rem 25.8rem;
+    background-position: 3% 50%;
+    overflow: hidden;
   }
-  &__package-img {
+
+  &__package-inner {
+    padding: 1.7rem 1.7rem 1.7rem 16.8rem;
+  }
+  /*   &__package-img {
     position: absolute;
     top: -35%;
     left: 5%;
     z-index: 5;
-  }
+  } */
 
   &__package-quantity {
     font-family: $font-inter;
     font-weight: 700;
-    font-size: 3.6rem;
-    line-height: 4.4rem;
-    margin-bottom: 0.2rem;
+    font-size: 2.4rem;
+    line-height: 2.9rem;
   }
   &__package-bottom {
     display: flex;
@@ -77,7 +80,7 @@
     line-height: 3.2rem;
   }
   &__package-arrow {
-    margin-left: 6rem;
+    margin-left: 1.6rem;
     cursor: pointer;
   }
 
@@ -102,19 +105,44 @@
       font-size: 4.4rem;
       line-height: 4.8rem;
     }
-    &__package-arrow {
-      margin-left: 3rem;
+    &__services-list {
+      grid-gap: 2rem;
     }
 
-    &__package-img {
-      left: 0;
+    &__packages-list {
+      grid-gap: 2rem;
     }
+
+    &__package-quantity {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+
+    &__package-price {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+
+    /* &__package-inner {
+      padding: 1.7rem 1.7rem 1.7rem 14.8rem;
+    } */
+
+    /*  &__package-item {
+      padding: 1.7rem 1.7rem 1.7rem 14.8rem;
+    } */
+    /*   &__package-arrow {
+      margin-left: 0.8rem;
+    } */
+
+    /*  &__package-img {
+      left: 0;
+    } */
   }
 }
 
 @media (max-width: 1024px) {
   .description {
-    &__package-img {
+    /*     &__package-img {
       width: 15rem;
       height: 15rem;
       top: -40%;
@@ -125,31 +153,25 @@
     }
     &__package-item {
       padding: 2.4rem 2.4rem 2.8rem 15.8rem;
+    } */
+    &__package-inner {
+      padding: 1.7rem 1.7rem 1.7rem 13.8rem;
     }
   }
 }
 
 @media (max-width: 860px) {
   .description {
-    &__package-quantity {
-      font-size: 2.4rem;
-      line-height: 3rem;
+    &__packages-list {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &__package-inner {
+      padding: 1.7rem 1.7rem 1.7rem 16.8rem;
     }
     &__package-item {
-      padding: 2.4rem 2.4rem 2.4rem 14rem;
-    }
-    &__package-img {
-      left: 3%;
-      top: -5%;
-    }
-
-    &__package-price {
-      font-size: 2rem;
-      line-height: 2.4rem;
-    }
-
-    &__package-arrow {
-      margin-left: 2rem;
+      background-size: 20%;
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -159,32 +181,50 @@
     &__services-list {
       grid-template-columns: repeat(1, 1fr);
     }
-  }
-}
 
-@media (max-width: 640px) {
-  .description {
-    &__packages-list {
-      grid-template-columns: repeat(1, 1fr);
+    &__package-inner {
+      padding: 1.7rem 1.7rem 1.7rem 16.8rem;
     }
     &__package-item {
+      background-size: 25%;
+    }
+
+    /*     &__package-item {
       background-size: contain;
       background-repeat: no-repeat;
       background-position: 11% 50%;
       padding: 2.4rem 2.4rem 2.8rem 22rem;
-    }
-    &__package-img {
+    } */
+    /*     &__package-img {
       top: -25%;
       left: 8%;
     }
 
     &__package-arrow {
       margin-left: 4rem;
+    } */
+  }
+}
+
+@media (max-width: 640px) {
+  .description {
+    &__package-item {
+      background-size: 30%;
+      justify-content: flex-end;
     }
   }
 }
 
 @media (max-width: 540px) {
+  .description {
+    &__package-item {
+      background-size: 40%;
+      justify-content: center;
+    }
+  }
+}
+
+/* @media (max-width: 540px) {
   .description {
     &__package-item {
       background-size: contain;
@@ -204,3 +244,4 @@
     }
   }
 }
+ */
