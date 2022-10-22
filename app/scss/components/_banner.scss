@@ -10,6 +10,14 @@
   border: 0.1rem solid #ffd3d6;
   box-shadow: 0px 0.4rem 40rem rgba(0, 0, 0, 0.12);
   border-radius: 2.4rem;
+  overflow: hidden;
+
+  &--spheres {
+    background-image: url('../../images/banner-image-2.jpg');
+
+    background-size: 38%;
+    background-position: 87% 50%;
+  }
 
   &__title {
     font-family: $font-cormorant;
@@ -57,10 +65,34 @@
       border-bottom: 0.1rem solid #534647;
     }
   }
+  &__logo {
+    position: absolute;
+    content: '';
+    width: 2.9rem;
+    height: 3rem;
+    bottom: 3.6rem;
+    right: 5.6rem;
+    z-index: 5;
+  }
+}
+
+@media (max-width: 860px) {
+  .banner {
+    background-size: 45%;
+    background-position: 100% 70%;
+    &--spheres {
+      background-size: 38%;
+      background-position: 100% 50%;
+    }
+  }
 }
 
 @media (max-width: 768px) {
   .banner {
     background-image: none;
+
+    &--spheres {
+      background-image: none;
+    }
   }
 }
