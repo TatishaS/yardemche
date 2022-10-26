@@ -25,7 +25,7 @@ function burgerMenu() {
   const burger = document.querySelector('.menu__burger');
   const menuList = document.querySelector('.menu__list-wrapper');
 
-  //const overlay = document.querySelector('.overlay');
+  const overlay = document.querySelector('.overlay');
   //const body = document.querySelector('body');
   const menuLinks = document.querySelectorAll('.menu__list-link');
 
@@ -33,7 +33,7 @@ function burgerMenu() {
     menuList.classList.remove('active');
 
     burger.classList.remove('active-burger');
-    //overlay.classList.remove('overlay--show');
+    overlay.classList.remove('overlay--show');
   }
 
   burger.addEventListener('click', () => {
@@ -42,7 +42,7 @@ function burgerMenu() {
 
       burger.classList.add('active-burger');
 
-      //overlay.classList.add('overlay--show');
+      overlay.classList.add('overlay--show');
     } else {
       hideBurgerMenu();
     }
@@ -61,7 +61,7 @@ function burgerMenu() {
     }
   });
 
-  //overlay.addEventListener('click', hideBurgerMenu);
+  overlay.addEventListener('click', hideBurgerMenu);
 }
 
 let swiper = new Swiper('.portfolio__swiper-slider', {
