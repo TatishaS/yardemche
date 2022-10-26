@@ -47,3 +47,29 @@
     }
   }
 }
+
+@media (max-width: 540px) {
+  .about {
+    padding-bottom: 3.6rem;
+    position: relative;
+    & .container::before {
+      position: absolute;
+      content: '';
+      width: calc(100% - 2rem);
+      height: 0.1rem;
+      background: #b2b7d7;
+      right: 1rem;
+      left: 1rem;
+      bottom: 0;
+    }
+
+    &__top {
+      flex-wrap: wrap;
+    }
+
+    &__btn {
+      width: 100%;
+      margin-top: 1.2rem;
+    }
+  }
+}

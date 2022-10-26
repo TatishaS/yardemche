@@ -203,8 +203,31 @@
 
 @media (max-width: 540px) {
   .services {
+    padding-bottom: 3.6rem;
+    position: relative;
+    & .container::before {
+      position: absolute;
+      content: '';
+      width: calc(100% - 2rem);
+      height: 0.1rem;
+      background: #b2b7d7;
+      right: 1rem;
+      left: 1rem;
+      bottom: 0;
+    }
+
     &__top {
+      flex-wrap: wrap;
       margin-bottom: 4.8rem;
+    }
+
+    &__list-container {
+      margin-top: 7.2rem;
+    }
+
+    &__btn {
+      width: 100%;
+      margin-top: 1.2rem;
     }
 
     &__arrow {
