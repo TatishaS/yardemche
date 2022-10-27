@@ -413,7 +413,7 @@
 
     <div class="overlay"></div>
 
-    <div class="modal modal__edit">
+    <div class="modal modal__edit active">
       <div class="modal__wrapper">
         <form class="modal__edit-form edit-form">
           <div class="edit-form__header">
@@ -429,6 +429,19 @@
                 id="title"
                 required
               />
+            </div>
+            <div class="form__category-wrapper">
+              <select id="category" name="category" class="form__category">
+                <option selected disabled>Все категории</option>
+                <option value="Психология">Психология</option>
+                <option value="Косметология">Косметология</option>
+                <option value="Альтернативная медицина">
+                  Альтернативная медицина
+                </option>
+                <option value="Маникюр и педикюр">Маникюр и педикюр</option>
+                <option value="Астрология">Астрология</option>
+                <option value="Дизайн">Дизайн</option>
+              </select>
             </div>
 
             <div class="edit-form__btns">

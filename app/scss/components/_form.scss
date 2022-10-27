@@ -39,4 +39,38 @@
   &__btn:hover {
     background-color: #c2770f;
   }
+
+  /* NEW STYLES */
+  &__category {
+    /* max-width: 25rem;
+    width: 18rem; */
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    flex: 1;
+    font-weight: 700;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    /*  border-bottom-color: currentcolor;
+    border-bottom-style: none;
+    border-bottom-width: medium; */
+
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.16);
+    padding: 0.5rem 2.8rem 0.5rem 0.5rem;
+
+    background-image: url(../../images/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+  }
+
+  &__category::-ms-expand {
+    display: none;
+  }
 }
