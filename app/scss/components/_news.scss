@@ -24,7 +24,7 @@
   &__items {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    //grid-template-rows: repeat(2, 1fr);
     grid-gap: 3.6rem 3rem;
 
     margin-bottom: 4.8rem;
@@ -61,14 +61,13 @@
     }
   }
 
-  &__item:first-child,
-  &__item:nth-child(2),
-  &__item:nth-child(3) {
+  &__item {
     grid-column: span 2;
   }
 
   &__item:nth-child(4),
-  &__item:nth-child(5) {
+  &__item:nth-child(5n - 1),
+  &__item:nth-child(5n) {
     grid-column: span 3;
   }
 
@@ -86,9 +85,14 @@
     line-height: 1.6rem;
   }
 
+  &__btn-container {
+    text-align: center;
+  }
+
   &__btn {
-    margin: 0 auto;
+    display: inline-block;
     width: auto;
+    //margin: 0 auto;
     background-color: $button-orange;
     color: #fff;
 
@@ -112,14 +116,13 @@
       grid-gap: 3rem;
     }
 
-    &__item:first-child,
-    &__item:nth-child(2),
-    &__item:nth-child(3) {
+    &__item {
       grid-column: span 6;
     }
 
     &__item:nth-child(4),
-    &__item:nth-child(5) {
+    &__item:nth-child(5n - 1),
+    &__item:nth-child(5n) {
       grid-column: span 6;
     }
 
