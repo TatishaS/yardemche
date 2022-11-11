@@ -19,8 +19,8 @@
     margin-bottom: 3.6rem;
   }
   &__list-item {
-    height: 15.6rem;
-    max-height: 20rem;
+    min-height: 15.6rem;
+    //max-height: 20rem;
     box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.1);
     border-radius: 2.4rem;
     margin-bottom: 3.6rem;
