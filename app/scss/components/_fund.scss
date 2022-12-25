@@ -48,6 +48,25 @@
   &__info {
     padding: 2.4rem;
   }
+
+  &__info-text {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-link {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+
+    color: #111111;
+  }
 }
 
 @media (max-width: 1200px) {
