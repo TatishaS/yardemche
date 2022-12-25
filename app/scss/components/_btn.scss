@@ -21,6 +21,21 @@
     opacity: 0.8;
     color: #ffffff;
   }
+
+  &--green {
+    width: auto;
+    min-width: 22.9rem;
+    font: $font-opensans;
+    background-color: $button-green;
+    color: #ffffff;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    border: none;
+    padding: 1rem 3.6rem;
+  }
+  &--green:hover {
+    background: #6c7b47;
+  }
 }
 
 @media (max-width: 860px) {

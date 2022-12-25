@@ -6,15 +6,13 @@
 @import './components/header';
 @import './components/menu';
 @import './components/btn';
-@import './components/top';
-@import './components/description';
-@import './components/card';
-@import './components/situations';
-@import './components/accent';
-@import './components/banner';
-@import './components/spheres';
-@import './components/how';
-@import './components/news';
+@import './components/hero';
+@import './components/descr';
+@import './components/help';
+@import './components/poll';
+@import './components/funds';
+@import './components/fund';
+
 @import './components/service';
 @import './components/client';
 @import './components/rating';
@@ -35,3 +33,14 @@
 @import './components/overlay';
 @import './components/edit-form';
 @import './components/footer';
+
+/* old main page */
+@import './components/top';
+@import './components/description';
+@import './components/card';
+@import './components/situations';
+@import './components/accent';
+@import './components/banner';
+@import './components/spheres';
+@import './components/how';
+@import './components/news';

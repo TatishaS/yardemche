@@ -50,7 +50,7 @@ dd {
   padding: 0;
 }
 
-ul[class] {
+ul {
   list-style: none;
 }
 
@@ -70,9 +70,3 @@ a {
   text-decoration: none;
   color: $grey-text;
 }
-
-/* svg path {
-  stroke: inherit;
-  stroke-width: inherit;
-  fill: inherit;
-} */

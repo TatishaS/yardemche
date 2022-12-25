@@ -1,0 +1,154 @@
+.hero {
+  min-height: 79.2rem;
+  &__top {
+    background-image: url(../images/top-bg-2.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    position: relative;
+
+    padding: 10.6rem 0 21rem;
+  }
+  &__top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: linear-gradient(
+      81.4deg,
+      rgba(0, 0, 0, 0.65) 2.84%,
+      rgba(0, 0, 0, 0) 239.66%
+    );
+  }
+
+  &__top::before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    left: -40%;
+    bottom: -0.6rem;
+    width: 289.3rem;
+
+    height: 15.5rem;
+    background-image: url('../../images/hero-shape.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__item-inner {
+    position: relative;
+
+    z-index: 3;
+  }
+
+  &__title {
+    max-width: 69rem;
+    font-family: $font-cormorant;
+    font-weight: 400;
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+
+    color: #ffffff;
+    margin-bottom: 2.4rem;
+  }
+
+  &__subtitle {
+    max-width: 77.5rem;
+    font-family: $font-inter;
+    font-weight: 400;
+
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 3.6rem;
+  }
+  &__btns {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__btn {
+    margin-bottom: 18.9rem;
+
+    &:not(:last-child) {
+      margin-right: 3.6rem;
+    }
+
+    &--donate {
+      padding: 1rem 3.6rem 1rem 7rem;
+      background-image: url('../../images/icon-heart.svg');
+      background-size: 2.4rem 2.4rem;
+      background-repeat: no-repeat;
+      background-position: 3rem 50%;
+    }
+
+    &--donate:hover {
+      background: #6c7b47 url('../../images/icon-heart.svg');
+      background-size: 2.4rem 2.4rem;
+      background-repeat: no-repeat;
+      background-position: 3rem 50%;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .hero {
+    &__top::before {
+      left: -55%;
+    }
+    &__btn {
+      margin-bottom: 12rem;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    &__title {
+      font-size: 5.2rem;
+      line-height: 5.2rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .hero {
+    &__btn {
+      margin-bottom: 12rem;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .hero {
+    &__btns {
+      flex-direction: column;
+    }
+    &__btn {
+      align-self: flex-start;
+      margin-bottom: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    &__title {
+      font-size: 4.2rem;
+      line-height: 4.2rem;
+    }
+
+    &__subtitle {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
+}

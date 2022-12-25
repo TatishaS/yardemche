@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Inter:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Open+Sans:wght@700&family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.min.css" />
@@ -20,10 +20,10 @@
         <div class="header__inner">
           <nav class="header__nav">
             <a class="header__logo" href="#">
-              <img src="images/logo-header.svg" alt="Ярдэмче лого" />
+              <img src="images/logo-header-new.svg" alt="Ярдэмче лого" />
             </a>
 
-            <ul class="header__menu menu menu--desktop menu--transparent">
+            <!--             <ul class="header__menu menu menu--desktop menu--transparent">
               <li class="menu__item menu__item--login">
                 <svg
                   class="menu__item-img menu__item-img--login"
@@ -48,7 +48,7 @@
                   >+7 917 295-77-25</a
                 >
               </li>
-            </ul>
+            </ul> -->
             <div class="menu__profile">
               <a href="#" class="menu__profile-link">
                 <img
@@ -124,12 +124,6 @@
                     >Регистрация</a
                   >
                 </li>
-
-                <!--                 <li class="menu__list-item menu__list-item--mobile">
-                  <a href="tel:+79172957725" class="menu__list-itemlink"
-                    >+7 917 295-77-25</a
-                  >
-                </li> -->
               </ul>
             </div>
 
@@ -140,567 +134,282 @@
         </div>
       </div>
     </header>
-
     <main class="main">
-      <section class="top">
-        <div class="top__swiper-slider swiper-slider">
-          <div class="swiper-wrapper swiper-wrapper--top">
-            <div
-              class="top__slider-item swiper-slide swiper-slide--top"
-              style="background-image: url('./images/top-bg-1.jpg')"
-            >
-              <div class="container">
-                <div class="top__item-inner">
-                  <div class="top__item-data">
-                    <h2 class="top__title">Единый портал услуг «Ярдэмче»</h2>
-                    <h3 class="top__subtitle">
-                      Комплексная помощь и поддержка для женщин
-                      <span class="top__subtitle-span">в любой</span> сложной
-                      жизненной ситуации.
-                    </h3>
-
-                    <a href="#" class="top__btn btn">Заполнить анкету</a>
-                  </div>
-                  <!--                   <div class="top__item-tags">
-                    <ul class="top__tags-list">
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Психологи</a>
-                      </li>
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Диетологи</a>
-                      </li>
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Астрологи</a>
-                      </li>
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Арт-терапия</a>
-                      </li>
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Коучи</a>
-                      </li>
-                      <li class="top__tag-item">
-                        <a href="#" class="top__tag-link">Стилисты</a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <a href="#" class="top__more-link">
-                    <span>Смотреть всех </span
-                    ><svg class="top__more-icon" width="26" height="16">
-                      <use xlink:href="#icon-arrow-more"></use></svg
-                  ></a> -->
-                </div>
-              </div>
-            </div>
-            <div
-              class="top__slider-item swiper-slide swiper-slide--top"
-              style="background-image: url('./images/top-bg-2.jpg')"
-            >
-              <div class="container">
-                <div class="top__item-inner">
-                  <div class="top__item-data">
-                    <h2 class="top__title">Единый портал услуг «Ярдэмче»</h2>
-                    <h3 class="top__subtitle">
-                      Комплексная помощь и поддержка для женщин
-                      <span class="top__subtitle-span">в любой</span> сложной
-                      жизненной ситуации.
-                    </h3>
-
-                    <a href="#" class="top__btn btn">Заполнить анкету</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              class="top__slider-item swiper-slide swiper-slide--top"
-              style="background-image: url('./images/top-bg-3.jpg')"
-            >
-              <div class="container">
-                <div class="top__item-inner">
-                  <div class="top__item-data">
-                    <h2 class="top__title">Единый портал услуг «Ярдэмче»</h2>
-                    <h3 class="top__subtitle">
-                      Комплексная помощь и поддержка для женщин
-                      <span class="top__subtitle-span">в любой</span> сложной
-                      жизненной ситуации.
-                    </h3>
-
-                    <a href="#" class="top__btn btn">Заполнить анкету</a>
-                  </div>
+      <section class="hero">
+        <div
+          class="hero__top"
+          style="background-image: url('./images/top-bg-2.jpg')"
+        >
+          <div class="container">
+            <div class="hero__item-inner">
+              <div class="hero__item-data">
+                <h2 class="hero__title">
+                  Центр помощи и развития для женщин Ильзиры Валиахметовой
+                  Ярдэмче (помощница)
+                </h2>
+                <h3 class="hero__subtitle">
+                  Искусственный интеллект подберет Вам специалиста в зависимости
+                  от вашей ситуации на основе жизненного опыта других женщин
+                </h3>
+                <div class="hero__btns">
+                  <a href="#" class="hero__btn btn btn--green"
+                    >Получить помощь</a
+                  >
+                  <a href="#" class="hero__btn hero__btn--donate btn btn--green"
+                    >Пожертвовать</a
+                  >
                 </div>
               </div>
             </div>
           </div>
-          <div class="swiper-pagination swiper-pagination--top"></div>
         </div>
       </section>
-      <section class="description">
+      <section class="descr">
         <div class="container">
-          <p class="description__title">
-            Мы предоставляем платформу разнообразных услуг от женщин для женщин
-          </p>
-          <ul class="description__services-list">
-            <li class="description__service-item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/service-item-1.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Подберите услугу под любой запрос</a>
-              </div>
-            </li>
-            <li class="description__service-item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/service-item-2.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">
-                  Получите помощь в трудной жизненной ситуации
-                </a>
-              </div>
-            </li>
-            <li class="description__service-item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/service-item-3.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">
-                  Получите доступ к продуктам наших специалистов
-                </a>
-              </div>
-            </li>
-          </ul>
-          <p class="description__text">
-            Получить услугу наших специалистов можно либо обратившись к ним
-            напрямую, либо купив более выгодный пакет
-          </p>
-          <ul class="description__packages-list">
-            <li class="description__package-item">
-              <div class="description__package-inner">
-                <p class="description__package-quantity">2 услуги</p>
-                <div class="description__package-bottom">
-                  <span class="description__package-price">3 000 ₽</span>
-                  <a href="#" class="description__package-arrow">
-                    <svg width="30" height="16">
-                      <use xlink:href="#icon-arrow-package"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-            <li class="description__package-item">
-              <div class="description__package-inner">
-                <p class="description__package-quantity">4 услуги</p>
-                <div class="description__package-bottom">
-                  <span class="description__package-price">5 000 ₽</span>
-                  <a href="#" class="description__package-arrow">
-                    <svg width="30" height="16">
-                      <use xlink:href="#icon-arrow-package"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-
-            <li class="description__package-item">
-              <div class="description__package-inner">
-                <p class="description__package-quantity">8 услуг</p>
-                <div class="description__package-bottom">
-                  <span class="description__package-price">9 000 ₽</span>
-                  <a href="#" class="description__package-arrow">
-                    <svg width="30" height="16">
-                      <use xlink:href="#icon-arrow-package"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <p class="description__disclaimer">
-            Пакеты распространяются на специалистов, у которых указана
-            возможность работы с пакетами!
-          </p>
-        </div>
-      </section>
-
-      <section class="accent">
-        <div class="container">
-          <div class="accent__inner">
-            <p class="accent__text">
-              Также у нас есть искусственный интеллект, который подберет вам
-              специалиста в зависимости от вашей ситуации на основе опыта других
-              девушек
-            </p>
-            <a href="#" class="accent__btn btn">Попробовать</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="situations">
-        <div class="container">
-          <!--           <h2 class="situations__title title-main">
-            В каких ситуациях мы можем помочь?
-          </h2> -->
-          <!--           <ul class="situations__list">
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-1.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Попали в трудную жизненную ситуацию</a>
-              </div>
-            </li>
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-2.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">
-                  Испытываете трудности в&nbsp;отношениях
-                </a>
-              </div>
-            </li>
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-3.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Нуждаетесь в&nbsp;поддержке</a>
-              </div>
-            </li>
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-4.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Недовольны собой и&nbsp;своим телом</a>
-              </div>
-            </li>
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-5.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Беспокоят проблемы со&nbsp;здоровьем</a>
-              </div>
-            </li>
-            <li class="situations__item card">
-              <div
-                class="card__top"
-                style="background-image: url('./images/situation-6.jpg')"
-              ></div>
-              <div class="card__bottom">
-                <a class="card__text">Ищете возможность развиваться</a>
-              </div>
-            </li>
-          </ul> -->
-          <div class="situations__banner banner">
-            <div class="banner__inner">
-              <h3 class="banner__title">
-                Центр помощи и развития для женщин Ильзиры Валиахметовой
-              </h3>
-              <p class="banner__text">
-                Также у нас есть фонды партнеры, которые помогут вам
-                безвозмездно
-              </p>
-              <a href="#" class="banner__more-link">
-                <span>Посмотреть</span
-                ><svg class="banner__more-icon" width="26" height="16">
-                  <use xlink:href="#icon-arrow-more"></use></svg
-              ></a>
+          <div class="descr__inner">
+            <div class="descr__block descr__block--left">
               <img
-                src="./images/banner-log.png"
-                alt="Лого"
-                class="banner__logo"
+                class="descr__block-img--left"
+                src="./images/descr-bg-1.svg"
+                alt=""
+              />
+              <div class="descr__block-content descr__block-content--left">
+                <h2 class="descr__block-title title-main">О центре</h2>
+                <p class="descr__block-text">
+                  Ярдэм переводится с татарского - ПОМОЩЬ, а ярдэмчé -
+                  помощница. Этот проект создан специально для того, чтобы стать
+                  опорой для женщин в трудных ситуациях.
+                </p>
+                <p class="descr__block-text descr__block-text--2">
+                  Если вы не знаете:
+                </p>
+                <ul class="descr__block-list">
+                  <li class="descr__block-listitem">где получить помощь?</li>
+                  <li class="descr__block-listitem">куда обратиться?</li>
+                  <li class="descr__block-listitem">как себя вести</li>
+                  <li class="descr__block-listitem">
+                    не можете найти в себе силы жить дальше и решить сложившуюся
+                    ситуацию, то ЯРДЕМЧЕ- для вас.
+                  </li>
+                </ul>
+                <div class="descr__block-btns">
+                  <a href="#" class="descr__btn btn btn--green">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="descr__block descr__block--right">
+              <div class="descr__block-content">
+                <h2 class="descr__block-title title-main">
+                  Помогаем женщинам, попавшим в&nbsp;трудную жизненную ситуацию
+                </h2>
+                <p class="descr__block-text descr__block-text--right">
+                  Комплексная помощь и поддержка для женщин, консультации
+                  специалистов , индивидуальный подход к каждой. Большой выбор
+                  бесплатных услуг.
+                </p>
+                <div class="descr__block-btns">
+                  <a href="#" class="descr__btn btn btn--green"
+                    >Получить помощь</a
+                  >
+                  <a href="#" class="descr__btn btn btn--green">Пожертвовать</a>
+                </div>
+              </div>
+              <img
+                class="descr__block-img descr__block-img--right"
+                src="./images/descr-bg-2.svg"
+                alt=""
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="spheres">
+      <section class="help">
         <div class="container">
-          <h2 class="spheres__title title-main">Сферы наших специалистов</h2>
-          <div class="spheres__list-wrapper">
-            <ul class="spheres__list">
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Красота</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
+          <h2 class="help__title title-main">Как мы можем помочь?</h2>
+          <div class="help__list-wrapper">
+            <ul class="help__list">
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Юридическая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
                   </svg>
                 </a>
               </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Самопознание</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Другая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
                   </svg>
                 </a>
               </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Юридические услуги</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Психологическая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
                   </svg>
                 </a>
               </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Здоровье</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Бизнес</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Энергопрактики</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Обучение</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Личностный рост</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Творчество</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Эзотерика</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Психотерапия</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="spheres__list-item">
-                <a href="#" class="spheres__item-link">
-                  <span>Альтернативная</span
-                  ><svg class="spheres__link-icon" width="26" height="16">
-                    <use xlink:href="#icon-arrow-more"></use>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Фонды-партнеры</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-
-          <button class="spheres__btn btn">Показать все</button>
-          <div class="spheres__banner banner banner--spheres">
-            <div class="banner__inner">
-              <h3 class="banner__title">
-                Наши специалисты также готовы предложить вам свои товары
-              </h3>
-              <p class="banner__text banner__text--spheres">
-                Переходите на страницу магазина, выберете нужно категорию,
-                уточните дополнительные вопросы в чате перед покупкой
-              </p>
-              <a href="#" class="banner__more-link">
-                <span>Посмотреть</span
-                ><svg class="banner__more-icon" width="26" height="16">
-                  <use xlink:href="#icon-arrow-more"></use></svg
-              ></a>
-              <img
-                src="./images/banner-log.png"
-                alt="Лого"
-                class="banner__logo"
-              />
+        </div>
+      </section>
+      <section class="poll">
+        <div class="poll__wrapper">
+          <div class="container">
+            <div class="poll__inner">
+              <div class="poll__left"></div>
+              <div class="poll__right">
+                <h2 class="poll__title title-main">
+                  Пройдите короткий опрос, и мы подберем для Вас
+                  специализированный центр
+                </h2>
+                <p class="poll__text">
+                  Это искусственный интеллект, и он быстро подберет для Вас
+                  необходимую помощь среди благотворительных организаций России
+                </p>
+                <div class="poll__btn-block">
+                  <a href="#" class="poll__btn btn btn--green">Попробовать</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-
-      <section class="how">
+      <section class="funds">
         <div class="container">
-          <h2 class="how__title title-main">Как это работает</h2>
-          <div class="how__list-wrapper">
-            <div class="how__list-half">
-              <h3 class="how__list-title">Для специалистов</h3>
-              <ul class="how__list">
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Продвижение ваших услуг на сайте
-                  </h6>
-                  <p class="how__item-text">
-                    Продвижение услуг среди пользователей сайта, показ в топ
-                  </p>
-                </li>
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Участие в тарифной программе сайта
-                  </h6>
-                  <p class="how__item-text">
-                    Вы сможете быстро заработать постоянных клиентов, оказывая
-                    профессиональные услуги всем обратившхся к вам владельцев из
-                    одного тарифа
-                  </p>
-                </li>
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Красивая интернет визитка услуг
-                  </h6>
-                  <p class="how__item-text">
-                    У вас будет ссылка на красиво оформленный профиль с
-                    портфолио и реальными отзывами клиентов
-                  </p>
-                </li>
-              </ul>
-            </div>
-            <div class="how__list-half">
-              <h3 class="how__list-title">Для участниц</h3>
-              <ul class="how__list">
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Возможность купить услуги за более низкую цену
-                  </h6>
-                  <p class="how__item-text">
-                    Специалисты, у которых указан значок тарифов в виде
-                    звездочки услуги, будут стоить в среднем дешевле, чем у
-                    других специалистов, и, возможно, ниже рынка
-                  </p>
-                </li>
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Бесплатные консультации специалистов
-                  </h6>
-                  <p class="how__item-text">
-                    Менеджеры сайта бесплатно подскажут, какие специалисты
-                    смогут помочь сделать вашу жизнь значительно лучше в
-                    ближайшее время
-                  </p>
-                </li>
-                <li class="how__list-item">
-                  <h6 class="how__item-title">
-                    Администрирование спорных ситуаций
-                  </h6>
-                  <p class="how__item-text">
-                    При возникновении конфликтов со специалистами мы поможем вам
-                    разобраться в конфликте
-                  </p>
-                </li>
-              </ul>
-            </div>
+          <div class="funds__top">
+            <h2 class="funds__title title-main">
+              Фонды и благотворительные организации
+            </h2>
+            <a href="#" class="funds__top-link">Смотреть все</a>
           </div>
-        </div>
-      </section>
-
-      <section class="news">
-        <div class="container">
-          <div class="news__tabs">
-            <button class="news__title title active" data-tabs="news-previews">
-              Новости
-            </button>
-            <button class="news__title title" data-tabs="events-previews">
-              Мероприятия
-            </button>
-          </div>
-          <ul class="news__items">
-            <li
-              class="news__item"
-              style="background-image: url('./images/news-1.jpg')"
-            >
-              <div class="news__item-inner">
-                <div class="news__item-info">
-                  <a href="#" class="news__item-text"
-                    >Вечеринка для клиентов Ярдэмче</a
-                  >
+          <p class="funds__text">
+            Здесь собраны фонды по всей России, с которыми мы сотрудничаем. Вы
+            можете выбрать фонд самостоятельно или обратиться за помощью с
+            подбором к нам.
+          </p>
+          <ul class="funds__list">
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-1.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Живи сейчас</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li
-              class="news__item"
-              style="background-image: url('./images/news-2.png')"
-            >
-              <div class="news__item-inner">
-                <div class="news__item-info">
-                  <a href="#" class="news__item-text">У нас новый инвестор</a>
-                </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Благотворительный фонд помощи людям с боковым амиотрофическим
+                  склерозом и другими нейромышечными заболеваниями «Живи сейчас»
+                  — единственная в России некоммерческая организация,
+                  поддерживающая развитие системной помощи пациентам с БАС.
+                </p>
               </div>
             </li>
-            <li
-              class="news__item"
-              style="background-image: url('./images/news-2.png')"
-            >
-              <div class="news__item-inner">
-                <div class="news__item-info">
-                  <a href="#" class="news__item-text">У нас новый инвестор</a>
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-2.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Аистенок</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </li>
-            <li
-              class="news__item"
-              style="background-image: url('./images/news-4.png')"
-            >
-              <div class="news__item-inner">
-                <div class="news__item-info">
-                  <a href="#" class="news__item-text">На сайте обновление</a>
-                </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Организация «Аистенок» основана в 2003 году. Задачи:
+                  Сопровождение семей с детьми (родными и приемными) с тяжелым
+                  материальным положением, содействие устройству в новые семьи
+                  детей-сирот и детей, оставшихся без попечения родителей,
+                  предотвращение отказов от детей.
+                </p>
               </div>
             </li>
-            <li
-              class="news__item"
-              style="background-image: url('./images/news-5.png')"
-            >
-              <div class="news__item-inner">
-                <div class="news__item-info">
-                  <a href="#" class="news__item-text"
-                    >Новый раздел для специалистов</a
-                  >
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-2.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Аистенок</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Организация «Аистенок» основана в 2003 году. Задачи:
+                  Сопровождение семей с детьми (родными и приемными) с тяжелым
+                  материальным положением, содействие устройству в новые семьи
+                  детей-сирот и детей, оставшихся без попечения родителей,
+                  предотвращение отказов от детей.
+                </p>
+              </div>
+            </li>
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-1.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Живи сейчас</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Благотворительный фонд помощи людям с боковым амиотрофическим
+                  склерозом и другими нейромышечными заболеваниями «Живи сейчас»
+                  — единственная в России некоммерческая организация,
+                  поддерживающая развитие системной помощи пациентам с БАС.
+                </p>
               </div>
             </li>
           </ul>
-          <div class="news__btn-container">
-            <a class="news__btn btn">Показать еще</a>
+          <div class="funds__btn-block">
+            <a href="#" class="funds__btn btn btn--green">Показать еще</a>
           </div>
         </div>
       </section>
     </main>
+    <div class="overlay"></div>
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
@@ -766,6 +475,15 @@
       >
         <path
           d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-arrow-tiny"
+        viewBox="0 0 27 8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.3536 4.35355C26.5488 4.15829 26.5488 3.84171 26.3536 3.64645L23.1716 0.464466C22.9763 0.269204 22.6597 0.269204 22.4645 0.464466C22.2692 0.659728 22.2692 0.976311 22.4645 1.17157L25.2929 4L22.4645 6.82843C22.2692 7.02369 22.2692 7.34027 22.4645 7.53553C22.6597 7.7308 22.9763 7.7308 23.1716 7.53553L26.3536 4.35355ZM0 4.5H26V3.5H0V4.5Z"
         />
       </symbol>
       <symbol

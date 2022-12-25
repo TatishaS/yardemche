@@ -53,13 +53,13 @@ function burgerMenu() {
   });
 
   // Брейкпойнт, на котором появляется бургер-меню
-  window.addEventListener('resize', () => {
+  /*   window.addEventListener('resize', () => {
     if (window.innerWidth > 640) {
       menuList.classList.remove('active');
 
       burger.classList.remove('active-burger');
     }
-  });
+  }); */
 
   overlay.addEventListener('click', hideBurgerMenu);
 }
