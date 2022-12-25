@@ -1,6 +1,6 @@
 .hero {
-  min-height: 79.2rem;
   &__top {
+    min-height: 79.2rem;
     background-image: url(../images/top-bg-2.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -141,6 +141,9 @@
 
 @media (max-width: 640px) {
   .hero {
+    &__top {
+      padding: 8.6rem 0 2rem;
+    }
     &__title {
       font-size: 4.2rem;
       line-height: 4.2rem;

@@ -47,3 +47,20 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .funds {
+    &__top {
+      flex-direction: column;
+    }
+
+    &__title,
+    &__top-link {
+      align-self: flex-start;
+    }
+
+    &__top-link {
+      margin-bottom: 1.6rem;
+    }
+  }
+}
