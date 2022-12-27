@@ -32,7 +32,7 @@
 
   &__text {
     font-weight: 500;
-    margin-bottom: 1.6rem;
+    margin-bottom: 2.4rem;
   }
 }
 
@@ -49,12 +49,23 @@
 
 @media (max-width: 767px) {
   .poll {
-    &__wrapper {
-      background-image: none;
-    }
     &__inner {
       grid-template-columns: 1fr;
       grid-gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .poll {
+    &__wrapper {
+      padding-bottom: 23rem;
+      background-size: 80%;
+      background-position: bottom 0 left 50%;
+    }
+
+    &__btn {
+      width: 100%;
     }
   }
 }

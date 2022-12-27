@@ -104,6 +104,7 @@
       &--left,
       &--right {
         margin: 0;
+        margin-top: 3.6rem;
         max-width: 30%;
         height: auto;
       }
@@ -130,15 +131,33 @@
 
 @media (max-width: 640px) {
   .descr {
+    &__block--left {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__block--right {
+      display: flex;
+      flex-direction: column;
+      padding-top: 3.6rem;
+    }
     &__block-img {
       &--left,
       &--right {
-        display: none;
+        max-width: 50%;
       }
     }
 
     &__block-content {
       max-width: 100%;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__btn:not(:last-child) {
+      margin-right: 0;
     }
   }
 }

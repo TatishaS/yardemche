@@ -60,3 +60,11 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .funds {
+    &__btn {
+      width: 100%;
+    }
+  }
+}

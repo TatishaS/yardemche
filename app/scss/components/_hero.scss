@@ -153,5 +153,18 @@
       font-size: 2rem;
       line-height: 3rem;
     }
+
+    &__btn {
+      width: 100%;
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+      &--donate {
+        background-position: 30% 50%;
+      }
+      &--donate:hover {
+        background-position: 30% 50%;
+      }
+    }
   }
 }
