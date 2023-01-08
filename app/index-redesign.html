@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Open+Sans:wght@700&family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script defer src="js/main.min.js"></script>
+    <title>Ярдэмче</title>
+  </head>
+
+  <body class="main__body">
+    <header class="header header--fullscreen">
+      <div class="container">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <a class="header__logo" href="#">
+              <img src="images/logo-header-new.svg" alt="Ярдэмче лого" />
+            </a>
+            <div class="menu__profile">
+              <a href="#" class="menu__profile-link">
+                <img
+                  src="./images/expert-1.jpg"
+                  alt="Фото профиля"
+                  class="menu__profile-img"
+                />
+                <span class="menu__profile-name">Александра</span>
+              </a>
+            </div>
+            <div class="menu__list-wrapper">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">Главная</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink"
+                    >Специалисты
+                    <img
+                      src="./images/caret-down.svg"
+                      alt="Показать"
+                      class="menu__list-itemimg"
+                    />
+                  </a>
+                  <ul class="menu__submenu">
+                    <li>
+                      <a href="#" class="menu__subitem-link"
+                        >Красота и здоровье</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="menu__subitem-link">Психология</a>
+                    </li>
+
+                    <li><a href="#" class="menu__subitem-link">Тренинги</a></li>
+                  </ul>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-itemlink">О нас</a>
+                </li>
+                <li class="menu__list-item menu__list-item--authorized">
+                  <a href="#" class="menu__list-itemlink">Мои сообщения</a>
+                </li>
+                <li class="menu__list-item menu__list-item--authorized">
+                  <a href="#" class="menu__list-itemlink">Выйти</a>
+                </li>
+              </ul>
+              <ul class="menu__list-btns">
+                <li
+                  class="menu__list-item menu__list-item--mobile menu__list-item--login"
+                >
+                  <a
+                    href="#"
+                    class="menu__list-itemlink menu__list-itemlink--mobile"
+                  >
+                    <svg
+                      class="menu__item-img menu__item-img--login"
+                      width="20"
+                      height="20"
+                    >
+                      <use xlink:href="#icon-login"></use></svg
+                    >Войти</a
+                  >
+                </li>
+
+                <li class="menu__list-item menu__list-item--mobile">
+                  <a
+                    href="#"
+                    class="menu__list-itemlink menu__list-itemlink--mobile"
+                  >
+                    <svg class="menu__item-img" width="20" height="20">
+                      <use xlink:href="#icon-register"></use></svg
+                    >Регистрация</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <button class="menu__burger menu__burger--white">
+              <span></span>
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="intro">
+        <div class="intro__swiper-slider swiper-slider">
+          <div class="swiper-wrapper swiper-wrapper--intro">
+            <div
+              class="intro__slider-item swiper-slide swiper-slide--top"
+              style="background-image: url('./images/intro-bg-1.jpg')"
+            >
+              <div class="container">
+                <div class="intro__item-inner">
+                  <div class="intro__item-data">
+                    <h2 class="intro__title">Единый портал услуг «Ярдэмче»</h2>
+                    <h3 class="intro__subtitle">
+                      Комплексная помощь и поддержка для женщин
+                      <span class="intro__subtitle-span">в любой</span> сложной
+                      жизненной ситуации.
+                    </h3>
+
+                    <a href="#" class="intro__btn btn">Заполнить анкету</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="intro__slider-item swiper-slide swiper-slide--top"
+              style="background-image: url('./images/intro-bg-2.jpg')"
+            >
+              <div class="container">
+                <div class="intro__item-inner">
+                  <div class="intro__item-data">
+                    <h2 class="intro__title">Единый портал услуг «Ярдэмче»</h2>
+                    <h3 class="intro__subtitle">
+                      Комплексная помощь и поддержка для женщин
+                      <span class="intro__subtitle-span">в любой</span> сложной
+                      жизненной ситуации.
+                    </h3>
+
+                    <a href="#" class="intro__btn btn">Заполнить анкету</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="intro__slider-item swiper-slide swiper-slide--top"
+              style="background-image: url('./images/intro-bg-3.jpg')"
+            >
+              <div class="container">
+                <div class="intro__item-inner">
+                  <div class="intro__item-data">
+                    <h2 class="intro__title">Единый портал услуг «Ярдэмче»</h2>
+                    <h3 class="intro__subtitle">
+                      Комплексная помощь и поддержка для женщин
+                      <span class="intro__subtitle-span">в любой</span> сложной
+                      жизненной ситуации.
+                    </h3>
+
+                    <a href="#" class="intro__btn btn">Заполнить анкету</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination swiper-pagination--intro"></div>
+        </div>
+      </section>
+
+      <section class="descr">
+        <div class="container">
+          <div class="descr__inner">
+            <div class="descr__block descr__block--left">
+              <img
+                class="descr__block-img--left"
+                src="./images/descr-bg-1.svg"
+                alt=""
+              />
+              <div class="descr__block-content descr__block-content--left">
+                <h2 class="descr__block-title title-main">О центре</h2>
+                <p class="descr__block-text">
+                  Ярдэм переводится с татарского - ПОМОЩЬ, а ярдэмчé -
+                  помощница. Этот проект создан специально для того, чтобы стать
+                  опорой для женщин в трудных ситуациях.
+                </p>
+                <p class="descr__block-text descr__block-text--2">
+                  Если вы не знаете:
+                </p>
+                <ul class="descr__block-list">
+                  <li class="descr__block-listitem">где получить помощь?</li>
+                  <li class="descr__block-listitem">куда обратиться?</li>
+                  <li class="descr__block-listitem">как себя вести</li>
+                  <li class="descr__block-listitem">
+                    не можете найти в себе силы жить дальше и решить сложившуюся
+                    ситуацию, то ЯРДЕМЧЕ- для вас.
+                  </li>
+                </ul>
+                <div class="descr__block-btns">
+                  <a href="#" class="descr__btn btn btn--green">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="descr__block descr__block--right">
+              <div class="descr__block-content">
+                <h2 class="descr__block-title title-main">
+                  Помогаем женщинам, попавшим в&nbsp;трудную жизненную ситуацию
+                </h2>
+                <p class="descr__block-text descr__block-text--right">
+                  Комплексная помощь и поддержка для женщин, консультации
+                  специалистов , индивидуальный подход к каждой. Большой выбор
+                  бесплатных услуг.
+                </p>
+                <div class="descr__block-btns">
+                  <a href="#" class="descr__btn btn btn--green"
+                    >Получить помощь</a
+                  >
+                  <a href="#" class="descr__btn btn btn--green">Пожертвовать</a>
+                </div>
+              </div>
+              <img
+                class="descr__block-img descr__block-img--right"
+                src="./images/descr-bg-2.svg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="help">
+        <div class="container">
+          <h2 class="help__title title-main">Как мы можем помочь?</h2>
+          <div class="help__list-wrapper">
+            <ul class="help__list">
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Юридическая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Другая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Психологическая помощь</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="help__list-item">
+                <a href="#" class="help__item-link">
+                  <span>Фонды-партнеры</span
+                  ><svg class="help__link-icon" width="27" height="8">
+                    <use xlink:href="#icon-arrow-tiny"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="poll">
+        <div class="poll__wrapper">
+          <div class="container">
+            <div class="poll__inner">
+              <div class="poll__left"></div>
+              <div class="poll__right">
+                <h2 class="poll__title title-main">
+                  Пройдите короткий опрос, и мы подберем для Вас
+                  специализированный центр
+                </h2>
+                <p class="poll__text">
+                  Это искусственный интеллект, и он быстро подберет для Вас
+                  необходимую помощь среди благотворительных организаций России
+                </p>
+                <div class="poll__btn-block">
+                  <a href="#" class="poll__btn btn btn--green">Попробовать</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="funds">
+        <div class="container">
+          <div class="funds__top">
+            <h2 class="funds__title title-main">
+              Фонды и благотворительные организации
+            </h2>
+            <a href="#" class="funds__top-link">Смотреть все</a>
+          </div>
+          <p class="funds__text">
+            Здесь собраны фонды по всей России, с которыми мы сотрудничаем. Вы
+            можете выбрать фонд самостоятельно или обратиться за помощью с
+            подбором к нам.
+          </p>
+          <ul class="funds__list">
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-1.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Живи сейчас</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Благотворительный фонд помощи людям с боковым амиотрофическим
+                  склерозом и другими нейромышечными заболеваниями «Живи сейчас»
+                  — единственная в России некоммерческая организация,
+                  поддерживающая развитие системной помощи пациентам с БАС.
+                </p>
+              </div>
+            </li>
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-2.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Аистенок</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Организация «Аистенок» основана в 2003 году. Задачи:
+                  Сопровождение семей с детьми (родными и приемными) с тяжелым
+                  материальным положением, содействие устройству в новые семьи
+                  детей-сирот и детей, оставшихся без попечения родителей,
+                  предотвращение отказов от детей.
+                </p>
+              </div>
+            </li>
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-2.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Аистенок</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Организация «Аистенок» основана в 2003 году. Задачи:
+                  Сопровождение семей с детьми (родными и приемными) с тяжелым
+                  материальным положением, содействие устройству в новые семьи
+                  детей-сирот и детей, оставшихся без попечения родителей,
+                  предотвращение отказов от детей.
+                </p>
+              </div>
+            </li>
+            <li class="funds__item fund">
+              <div class="fund__header">
+                <div class="fund__header-wrapper">
+                  <img
+                    src="./images/fund-1.png"
+                    alt="Логотип фонда"
+                    class="fund__img"
+                  />
+                  <div class="fund__header-inner">
+                    <div class="fund__left">
+                      <h3 class="fund__title">Живи сейчас</h3>
+                      <p class="fund__category">Красота и здоровье</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="fund__info">
+                <p class="fund__info-text">
+                  Благотворительный фонд помощи людям с боковым амиотрофическим
+                  склерозом и другими нейромышечными заболеваниями «Живи сейчас»
+                  — единственная в России некоммерческая организация,
+                  поддерживающая развитие системной помощи пациентам с БАС.
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="funds__btn-block">
+            <a href="#" class="funds__btn btn btn--green">Показать еще</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="overlay"></div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__info">
+            <a href="#" class="footer__logo-link">
+              <img
+                src="./images/logo-footer.svg"
+                alt="Лого Ярдэм"
+                class="footer__logo-img"
+              />
+            </a>
+            <p class="footer__copyright">ООО «ЯРДЭМЧЕ» Все права защищены</p>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </div>
+          <a href="tel:+79172957725" class="footer__contact"
+            >+7 917 295-77-25</a
+          >
+        </div>
+      </div>
+    </footer>
+    <svg
+      class="visually-hidden"
+      width="0"
+      height="0"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <symbol
+        id="icon-login"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M14.4117 6.07571C14.4117 8.52324 12.4493 10.4858 10 10.4858C7.55162 10.4858 5.58839 8.52324 5.58839 6.07571C5.58839 3.62819 7.55162 1.6665 10 1.6665C12.4493 1.6665 14.4117 3.62819 14.4117 6.07571ZM10 18.3332C6.38535 18.3332 3.33337 17.7457 3.33337 15.479C3.33337 13.2115 6.40453 12.6448 10 12.6448C13.6156 12.6448 16.6667 13.2323 16.6667 15.499C16.6667 17.7665 13.5956 18.3332 10 18.3332Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-register"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M7.91663 10.4616C10.2121 10.4616 12.0522 8.59771 12.0522 6.27253C12.0522 3.94735 10.2121 2.0835 7.91663 2.0835C5.62115 2.0835 3.7811 3.94735 3.7811 6.27253C3.7811 8.59771 5.62115 10.4616 7.91663 10.4616ZM7.91663 12.5128C4.54515 12.5128 1.66663 13.0519 1.66663 15.2055C1.66663 17.3583 4.52763 17.9168 7.91663 17.9168C11.2873 17.9168 14.1666 17.3778 14.1666 15.2241C14.1666 13.0705 11.3056 12.5128 7.91663 12.5128ZM16.5816 7.99005H17.5841C17.9968 7.99005 18.3333 8.33125 18.3333 8.74973C18.3333 9.1682 17.9968 9.50941 17.5841 9.50941H16.5816V10.4905C16.5816 10.909 16.246 11.2502 15.8324 11.2502C15.4198 11.2502 15.0833 10.909 15.0833 10.4905V9.50941H14.0824C13.6689 9.50941 13.3333 9.1682 13.3333 8.74973C13.3333 8.33125 13.6689 7.99005 14.0824 7.99005H15.0833V7.00984C15.0833 6.59137 15.4198 6.25016 15.8324 6.25016C16.246 6.25016 16.5816 6.59137 16.5816 7.00984V7.99005Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-call"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.1389 11.983C14.5791 11.8626 14.1363 12.1225 13.7442 12.3494C13.3427 12.5833 12.5791 13.2027 12.1415 13.0442C9.90074 12.1216 7.79328 10.1604 6.88099 7.91064C6.7202 7.46364 7.33671 6.69525 7.56886 6.28897C7.79414 5.89568 8.04865 5.44868 7.93257 4.88474C7.82767 4.37797 6.47085 2.65148 5.99106 2.17936C5.67464 1.8675 5.35049 1.69598 5.01773 1.66826C3.76667 1.61455 2.36943 3.28386 2.12438 3.68322C1.51046 4.53476 1.5139 5.66785 2.1347 7.04176C3.63081 10.7321 9.28939 16.3014 12.9936 17.8537C13.6771 18.1734 14.3022 18.3337 14.8637 18.3337C15.4131 18.3337 15.9024 18.1803 16.3229 17.8763C16.6401 17.6935 18.3779 16.2269 18.3323 14.9422C18.3048 14.6147 18.1337 14.2873 17.8258 13.9702C17.3572 13.486 15.6419 12.0887 15.1389 11.983Z"
+        />
+      </symbol>
+
+      <symbol
+        id="icon-arrow-more"
+        viewBox="0 0 26 16"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM0 9H25V7H0V9Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-arrow-tiny"
+        viewBox="0 0 27 8"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M26.3536 4.35355C26.5488 4.15829 26.5488 3.84171 26.3536 3.64645L23.1716 0.464466C22.9763 0.269204 22.6597 0.269204 22.4645 0.464466C22.2692 0.659728 22.2692 0.976311 22.4645 1.17157L25.2929 4L22.4645 6.82843C22.2692 7.02369 22.2692 7.34027 22.4645 7.53553C22.6597 7.7308 22.9763 7.7308 23.1716 7.53553L26.3536 4.35355ZM0 4.5H26V3.5H0V4.5Z"
+        />
+      </symbol>
+      <symbol
+        id="icon-arrow-package"
+        viewBox="0 0 31 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.4"
+          d="M30.7071 8.70711C31.0976 8.31658 31.0976 7.68342 30.7071 7.29289L24.3431 0.928932C23.9526 0.538408 23.3195 0.538408 22.9289 0.928932C22.5384 1.31946 22.5384 1.95262 22.9289 2.34315L28.5858 8L22.9289 13.6569C22.5384 14.0474 22.5384 14.6805 22.9289 15.0711C23.3195 15.4616 23.9526 15.4616 24.3431 15.0711L30.7071 8.70711ZM0 9H30V7H0V9Z"
+          fill="black"
+        />
+      </symbol>
+      <symbol
+        id="icon-write"
+        width="25"
+        height="24"
+        viewBox="0 0 25 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          opacity="0.4"
+          d="M20.4925 18.9532H14.7982C14.2426 18.9532 13.7908 19.4123 13.7908 19.9766C13.7908 20.5421 14.2426 21 14.7982 21H20.4925C21.048 21 21.4999 20.5421 21.4999 19.9766C21.4999 19.4123 21.048 18.9532 20.4925 18.9532Z"
+        />
+        <path
+          d="M10.809 6.90385L16.2049 11.2639C16.335 11.3682 16.3573 11.5596 16.2557 11.6929L9.85874 20.0282C9.45662 20.5431 8.86402 20.8344 8.22908 20.8452L4.73696 20.8882C4.55071 20.8903 4.38775 20.7613 4.34542 20.5764L3.55175 17.1258C3.41419 16.4915 3.55175 15.8358 3.95388 15.3306L10.3826 6.95545C10.4863 6.82108 10.6778 6.79743 10.809 6.90385Z"
+        />
+        <path
+          opacity="0.4"
+          d="M18.6205 8.66544L17.5803 9.96401C17.4755 10.0962 17.2872 10.1177 17.157 10.0124C15.8924 8.98901 12.6543 6.36285 11.7559 5.63509C11.6247 5.52759 11.6067 5.33625 11.7125 5.20295L12.7157 3.95706C13.6257 2.78534 15.2131 2.67784 16.4935 3.69906L17.9644 4.87078C18.5676 5.34377 18.9698 5.96726 19.1073 6.62299C19.2661 7.3443 19.0967 8.0527 18.6205 8.66544Z"
+        />
+      </symbol>
+    </svg>
+  </body>
+</html>

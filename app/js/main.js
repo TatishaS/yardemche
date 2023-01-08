@@ -104,6 +104,23 @@ let swiperTop = new Swiper('.top__swiper-slider', {
   },
 });
 
+let swiperIntro = new Swiper('.intro__swiper-slider', {
+  // Optional parameters
+  slidesPerView: 1,
+
+  autoplay: {
+    delay: 5000,
+  },
+  /*   effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
+  }, */
+  pagination: {
+    el: '.swiper-pagination--top',
+    clickable: true,
+  },
+});
+
 function handleImagePreview() {
   const previewContainer = document.querySelector('.edit-form__file-preview');
   const fileInput = document.querySelector('.edit-form__file-input');

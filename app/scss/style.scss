@@ -3,6 +3,8 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+
+/* Стили новой главной */
 @import './components/header';
 @import './components/menu';
 @import './components/btn';
@@ -13,6 +15,10 @@
 @import './components/funds';
 @import './components/fund';
 
+/* Стили главной index-redesign */
+@import './components/intro';
+
+/* Стили внутренних страниц */
 @import './components/service';
 @import './components/client';
 @import './components/rating';
@@ -34,7 +40,7 @@
 @import './components/edit-form';
 @import './components/footer';
 
-/* old main page */
+/* Стили старой главной */
 @import './components/top';
 @import './components/description';
 @import './components/card';
