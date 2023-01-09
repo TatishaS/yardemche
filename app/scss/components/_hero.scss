@@ -29,15 +29,15 @@
     content: '';
     position: absolute;
     z-index: 3;
-    left: -40%;
-    bottom: -0.6rem;
-    width: 289.3rem;
+    //left: -40%;
+    bottom: -2rem;
+    width: 100%;
 
-    height: 15.5rem;
+    height: 17.3rem;
     background-image: url('../../images/hero-shape.svg');
-    background-position: top center;
+    background-position: bottom center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   &__item-inner {
@@ -83,7 +83,7 @@
     }
 
     &--donate {
-      padding: 1rem 3.6rem 1rem 7rem;
+      padding: 1rem 3.3rem 1rem 6.7rem;
       background-image: url('../../images/icon-heart.svg');
       background-size: 2.4rem 2.4rem;
       background-repeat: no-repeat;
@@ -101,9 +101,9 @@
 
 @media (max-width: 1280px) {
   .hero {
-    &__top::before {
+    /* &__top::before {
       left: -55%;
-    }
+    } */
     &__btn {
       margin-bottom: 12rem;
     }

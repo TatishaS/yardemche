@@ -2,24 +2,16 @@
   background: #ffffff;
   border: 0.1rem solid #cfcfcf;
   border-radius: 2.4rem;
-  min-height: 25.2rem;
+  min-height: 10.4rem;
 
-  &__header {
-    border-radius: 1.2rem 1.2rem 0 0;
+  &__item-link {
+    cursor: pointer;
+  }
+
+  &__inner {
     padding: 2.4rem;
-    border-bottom: 0.1rem solid #cfcfcf;
-  }
-
-  &__header-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__header-inner {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
   }
 
@@ -44,29 +36,6 @@
     font-size: 1.6rem;
     line-height: 2rem;
   }
-
-  &__info {
-    padding: 2.4rem;
-  }
-
-  &__info-text {
-    font-weight: 500;
-    font-size: 1.6rem;
-    line-height: 2rem;
-  }
-
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__top-link {
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 3.6rem;
-
-    color: #111111;
-  }
 }
 
 @media (max-width: 1200px) {
@@ -89,20 +58,12 @@
 
 @media (max-width: 640px) {
   .fund {
-    &__header {
-      padding: 1.6rem;
-    }
-
     &__img {
       align-self: flex-start;
     }
 
     &__title {
       margin-bottom: 0.8rem;
-    }
-    &__header-inner {
-      flex-direction: column;
-      align-items: initial;
     }
 
     &__left {

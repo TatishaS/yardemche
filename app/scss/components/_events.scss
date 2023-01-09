@@ -1,0 +1,53 @@
+.events {
+  &__title {
+    font-family: $font-cormorant;
+
+    font-weight: 700;
+    font-size: 5.6rem;
+    line-height: 6.4rem;
+    color: $grey-text;
+    margin-bottom: 3.6rem;
+  }
+
+  &__item-img {
+    width: 100%;
+    border-radius: 1.2rem;
+    height: 18.9rem;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 2.4rem;
+  }
+
+  &__item-title {
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    color: #000000;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+    margin-bottom: 7.2rem;
+  }
+}
+
+@media (max-width: 860px) {
+  .events {
+    &__title {
+      font-size: 4.2rem;
+      line-height: 4.2rem;
+    }
+
+    &__list {
+      grid-template-columns: 1fr;
+      grid-gap: 4.8rem;
+    }
+
+    &__item-title {
+      font-size: 2rem;
+      line-height: 2.4rem;
+    }
+  }
+}

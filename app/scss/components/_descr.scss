@@ -1,5 +1,5 @@
 .descr {
-  padding-bottom: 5.2rem;
+  padding-bottom: 18.2rem;
 
   &__inner {
     display: grid;
@@ -11,7 +11,7 @@
 
   &__block {
     &--right {
-      padding-top: 8rem;
+      padding-top: 7rem;
     }
   }
 
@@ -20,7 +20,7 @@
       width: 37.9rem;
       height: 76.1rem;
       margin-left: 1rem;
-      margin-bottom: 7.6rem;
+      margin-top: 10rem;
     }
 
     &--right {
@@ -31,6 +31,7 @@
   }
 
   &__block-content {
+    margin-bottom: 4.8rem;
     &--left {
       max-width: 51.5rem;
     }
@@ -46,10 +47,10 @@
   &__block-text {
     font-weight: 500;
     color: #565656;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.6rem;
 
     &--right {
-      max-width: 46.5rem;
+      max-width: 48.5rem;
     }
 
     &--2 {
@@ -68,12 +69,38 @@
 
   &__block-list {
     list-style: inside;
-    margin-bottom: 3.6rem;
+    margin-bottom: 2.4rem;
   }
 
   &__block-listitem {
     &::marker {
       color: #565656;
+    }
+  }
+
+  &__block-stat {
+    max-width: 47rem;
+    margin-bottom: 2rem;
+  }
+
+  &__block-statitem {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.6rem 0;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    color: #565656;
+
+    span {
+      display: inline-block;
+      font-size: 3.6rem;
+      margin-right: 2.4rem;
+    }
+    &:last-child {
+      border: none;
     }
   }
 }
@@ -90,29 +117,12 @@
 
 @media (max-width: 860px) {
   .descr {
-    &__block {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    &__block-content {
-      max-width: 50%;
-    }
-
+    padding-bottom: 5.2rem;
     &__block-img {
       &--left,
       &--right {
-        margin: 0;
-        margin-top: 3.6rem;
-        max-width: 30%;
-        height: auto;
+        margin-top: 70%;
       }
-    }
-
-    &__inner {
-      grid-template-columns: 1fr;
-      grid-gap: 2rem;
     }
   }
 }
@@ -131,9 +141,12 @@
 
 @media (max-width: 640px) {
   .descr {
+    &__inner {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+    }
     &__block--left {
-      display: flex;
-      flex-direction: column-reverse;
+      order: 1;
     }
 
     &__block--right {
@@ -144,6 +157,7 @@
     &__block-img {
       &--left,
       &--right {
+        margin: 0 auto;
         max-width: 50%;
       }
     }
