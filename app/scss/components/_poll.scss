@@ -118,6 +118,11 @@
 
     &__btn {
       width: 100%;
+      background-position: 35% 50%;
+
+      &:hover {
+        background-position: 35% 50%;
+      }
     }
   }
 }

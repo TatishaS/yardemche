@@ -123,6 +123,12 @@
   .hero {
     &__btn {
       margin-bottom: 12rem;
+      &--donate {
+        background-position: 3rem 50%;
+      }
+      &--donate:hover {
+        background-position: 3rem 50%;
+      }
     }
   }
 }
@@ -160,10 +166,10 @@
         margin-right: 0;
       }
       &--donate {
-        background-position: 30% 50%;
+        background-position: 25% 50%;
       }
       &--donate:hover {
-        background-position: 30% 50%;
+        background-position: 25% 50%;
       }
     }
   }
