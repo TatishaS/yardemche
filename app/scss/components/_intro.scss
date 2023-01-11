@@ -15,8 +15,8 @@
 
     position: relative;
 
-    padding: 13.6rem 0 7.2rem;
-    height: calc(100vh - 15rem);
+    padding: 25rem 0 6rem;
+    height: calc(100vh - 25rem);
   }
   &__slider-item::after {
     content: '';
@@ -112,6 +112,9 @@
 
 @media (max-width: 860px) {
   .intro {
+    &__slider-item {
+      padding: 12rem 0 6rem;
+    }
     &__btn {
       margin-bottom: 12rem;
     }
