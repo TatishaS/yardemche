@@ -1,13 +1,15 @@
 .complex {
+  margin-top: -10rem;
   &__wrapper {
     background-image: url(../images/complex-bg.svg);
     background-repeat: no-repeat;
-    background-position: top 52% right 24%;
+    background-position: top 5% right 24%;
     background-size: 40rem 46.9rem;
-    padding: 18rem 0 8rem;
+    padding: 2rem 0 8rem;
   }
 
   &__title {
+    margin-top: 14rem;
     max-width: 60rem;
     margin-bottom: 2.4rem;
   }
@@ -47,6 +49,10 @@
 
 @media (max-width: 1200px) {
   .complex {
+    margin-top: 0;
+    &__title {
+      margin-top: 0;
+    }
     &__wrapper {
       background-position: top 52% right 5%;
       background-size: 30% auto;
@@ -73,6 +79,7 @@
 @media (max-width: 640px) {
   .complex {
     &__wrapper {
+      padding-top: 0;
       padding-bottom: 35rem;
       background-position: top 91% right 55%;
     }

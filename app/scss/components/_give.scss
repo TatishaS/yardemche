@@ -1,10 +1,11 @@
 .give {
   &__wrapper {
+    min-height: 92rem;
     background-image: url(../images/give-bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 16rem 0 0;
+    padding: 18rem 0 10rem;
   }
   &__title {
     padding-bottom: 4.8rem;
@@ -46,7 +47,14 @@
     margin-top: 4.2rem;
 
     &__wrapper {
-      padding: 11rem 0 0;
+      min-height: 80rem;
+      padding: 15rem 0 0;
+    }
+
+    &__item-text,
+    &__list {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
     }
   }
 }
@@ -56,11 +64,23 @@
     margin-top: 4.2rem;
 
     &__wrapper {
-      padding: 8rem 0 0;
+      min-height: 100rem;
+      padding: 15rem 0 0;
     }
     &__inner {
       grid-template-columns: repeat(1, 1fr);
       padding-bottom: 3.6rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .give {
+    margin-top: 2rem;
+
+    &__wrapper {
+      min-height: 108rem;
+      padding: 15rem 0 0;
     }
   }
 }
