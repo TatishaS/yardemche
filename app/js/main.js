@@ -116,7 +116,7 @@ let swiperIntro = new Swiper('.intro__swiper-slider', {
     crossFade: true,
   }, */
   pagination: {
-    el: '.swiper-pagination--top',
+    el: '.swiper-pagination--intro',
     clickable: true,
   },
 });

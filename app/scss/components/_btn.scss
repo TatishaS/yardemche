@@ -36,6 +36,23 @@
   &--green:hover {
     background: #6c7b47;
   }
+
+  &--pink {
+    box-sizing: border-box;
+    width: auto;
+    min-width: 22.9rem;
+    font: $font-opensans;
+    background-color: $button-pink;
+    color: $darkgrey-text;
+    font-size: 1.6rem;
+    line-height: 3.6rem;
+    border: none;
+    padding: 1rem 3.6rem;
+  }
+  &--pink:hover {
+    color: $darkgrey-text;
+    background-color: #e57c78;
+  }
 }
 
 @media (max-width: 860px) {
@@ -43,7 +60,8 @@
     font-size: 1.4rem;
     line-height: 2rem;
 
-    &--green {
+    &--green,
+    &--pink {
       font-size: 1.6rem;
       line-height: 3.6rem;
     }

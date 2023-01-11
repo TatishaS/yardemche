@@ -28,6 +28,10 @@
     }
   }
 
+  &__label--green {
+    padding: 0 0.2rem 0 0.2rem;
+  }
+
   /* set default star color */
   &__star {
     fill: $accent-orange;
@@ -37,12 +41,36 @@
     }
   }
 
+  &__star--green {
+    fill: $button-green;
+    path {
+      fill: $button-green;
+    }
+  }
+
+  &__star .rating--green__star-path {
+    stroke: $border-green;
+    stroke-width: 0.1rem;
+  }
+
   /* if any input is checked, make its following siblings grey  */
   &__input:checked ~ .rating__label .rating__star {
-    fill: #cccccc;
+    fill: #fff;
+
     path {
       fill: #cccccc;
     }
+  }
+
+  /* if any input is checked, make its following siblings grey  */
+  &__input--green:checked ~ .rating__label--green .rating__star--green {
+    fill: #fff;
+    stroke: #b4b4b4;
+    stroke-width: 0.1rem;
+
+    /*  path {
+      fill: #cccccc;
+    } */
   }
 }
 

@@ -1,0 +1,135 @@
+.opinion {
+  border: 0.1rem solid #bdbdbd;
+
+  border-radius: 0.8rem;
+  margin-bottom: 3.6rem;
+  font-family: $font-nunito;
+
+  &__header {
+    padding: 2.4rem 2.4rem 0 2.4rem;
+    color: #fff;
+  }
+
+  &__header-wrapper {
+    border-bottom: 0.1rem solid #c8c8c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.4rem;
+  }
+
+  &__header-inner {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.8rem;
+    height: 6.8rem;
+    border-radius: 50%;
+
+    border: 0.1rem solid #bdbdbd;
+    margin-right: 2rem;
+  }
+
+  &__img {
+    width: 6rem;
+    flex-shrink: 0;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  &__right {
+    align-self: flex-end;
+    margin-right: 2.2rem;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    margin-bottom: 0.4rem;
+    color: $lighter-text;
+  }
+
+  &__name {
+    font-weight: 500;
+
+    color: $light-text;
+  }
+
+  &__rating-title {
+    display: block;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    color: $grey-text;
+    margin-bottom: 1.2rem;
+
+    opacity: 0.6;
+  }
+
+  &__score {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    color: $grey-text;
+    margin-right: 1.2rem;
+  }
+  &__info {
+    padding: 2.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .opinion {
+    &__title {
+      line-height: 2.4rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .opinion {
+    &__title,
+    &__score {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .opinion {
+    &__header {
+      padding: 1.6rem;
+    }
+
+    &__img-wrapper {
+      align-self: flex-start;
+    }
+
+    &__title {
+      margin-bottom: 0.8rem;
+    }
+    &__header-inner {
+      flex-direction: column;
+      align-items: initial;
+    }
+
+    &__left {
+      margin-bottom: 2rem;
+    }
+
+    &__right {
+      align-self: initial;
+    }
+  }
+}
