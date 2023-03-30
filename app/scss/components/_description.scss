@@ -1,44 +1,21 @@
 .description {
-  padding-top: 5rem;
-  padding-bottom: 7.2rem;
   &__title {
-    max-width: 106rem;
-    font-family: $font-cormorant;
-
-    font-weight: 700;
-    font-size: 5.6rem;
-    line-height: 6.4rem;
-    color: #000000;
-    margin-bottom: 4.8rem;
-
-    span {
-      text-decoration-line: underline;
-    }
-  }
-
-  &__services-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 3rem;
-    margin-bottom: 6.4rem;
+    margin-bottom: 2.4rem;
   }
 
   &__text {
-    font-family: $font-cormorant;
-
-    font-weight: 600;
-    font-size: 4.8rem;
-    line-height: 5.8rem;
+    max-width: 59.5rem;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
 
     color: #000000;
-    max-width: 105rem;
-    margin-bottom: 3.6rem;
+    margin-bottom: 4.4rem;
   }
   &__packages-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 3rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8.2rem;
   }
 
   &__package-item {
@@ -47,11 +24,16 @@
     box-shadow: 0px 0.4rem 4rem rgba(0, 0, 0, 0.12);
     border-radius: 2.4rem;
     background-image: url('../../images/package-bg.png');
-    background-size: 45%;
+    background-size: 42%;
     background-repeat: no-repeat;
     background-position: 3% 50%;
     overflow: hidden;
     cursor: pointer;
+    transition: all 0.4s;
+  }
+
+  &__package-item:hover {
+    transform: scale(1.05, 1.05);
   }
 
   &__package-inner {
@@ -92,7 +74,7 @@
 
 @media (max-width: 1200px) {
   .description {
-    &__title {
+    /*    &__title {
       font-size: 4.8rem;
       line-height: 5.2rem;
     }
@@ -103,7 +85,7 @@
     }
     &__services-list {
       grid-gap: 2rem;
-    }
+    } */
 
     &__packages-list {
       grid-gap: 2rem;
@@ -155,8 +137,12 @@
 
 @media (max-width: 740px) {
   .description {
-    &__services-list {
+    /*  &__services-list {
       grid-template-columns: repeat(1, 1fr);
+    } */
+
+    &__packages__list {
+      margin-bottom: 4.2rem;
     }
 
     &__package-inner {
@@ -185,25 +171,3 @@
     }
   }
 }
-
-/* @media (max-width: 540px) {
-  .description {
-    &__package-item {
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: 5% 50%;
-      padding: 2.4rem 2.4rem 2.8rem 18rem;
-    }
-    &__package-img {
-      width: 16rem;
-      height: 16rem;
-      top: -15%;
-      left: 3%;
-    }
-
-    &__package-arrow {
-      margin-left: 3rem;
-    }
-  }
-}
- */

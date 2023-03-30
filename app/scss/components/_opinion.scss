@@ -85,6 +85,12 @@
   &__info {
     padding: 2.4rem;
   }
+
+  &__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7.2rem;
+  }
 }
 
 @media (max-width: 1200px) {
